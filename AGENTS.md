@@ -1,6 +1,6 @@
 # Astra Game Center web
 
-This repository is the web edition of the user's local Astra Game Center. Preserve the existing English charcoal/lavender interface and five game logos. Only Wardenfall is playable in the initial release; the other cards must honestly say Coming soon. The desktop editions remain separate.
+This repository is the web edition of the user's local Astra Game Center. Preserve the existing English charcoal/lavender interface and five game logos. Wardenfall, Sunset Block, Sidewalk Session and Pine Hollow are playable. Mario remains Coming soon at the user’s request. Each available game has its own logo loading screen with readiness and retry handling. The desktop editions remain separate.
 
 - Next.js on Vercel; Supabase Auth and per-user library rows. Never replace real authentication with a demo user or bypass in application code.
 - Protect game entry pages AND every shipped game file, including static images/audio/scripts. Verify sessions server-side; never trust an unvalidated cookie or client user ID.

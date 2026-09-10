@@ -1,6 +1,6 @@
 # Astra Game Center
 
-An English game library with the original charcoal and lavender interface, five game covers, Supabase email sign-in, favorites and recent launches. **Wardenfall is playable in this first web release.** Sunset Block, Super Mario, Sidewalk Session and Pine Hollow are catalog entries marked Coming soon.
+An English game library with the original charcoal and lavender interface, five game covers, Supabase email sign-in, favorites and recent launches. **Wardenfall, Sunset Block, Sidewalk Session and Pine Hollow are playable.** Super Mario remains marked Coming soon. Each game starts with its own logo and a loading screen that closes when its assets and scene are ready. Failed loads offer a retry.
 
 Games run in the player's browser. The original Mac desktop applications are separate from this repository.
 
@@ -61,7 +61,8 @@ After deployment, verify a fresh email sign-in, a favorite across reloads, Play,
 
 - `/library`, `/play`, `/api` and **all** `/games` files are guarded by the server proxy. Scripts, images and audio are covered too. Game files stay static so large assets do not pass through a function response body.
 - Supabase verifies sessions. The `game_library` table has per-user row-level security; its functions run with the caller's permissions.
-- Favorites and recent launch dates sync through Supabase.
+- Favorites and recent launch dates sync through Supabase. Launches create the user/game row only if absent, then update only its timestamp under RLS, preserving favorites. This release works with the existing migration; the legacy Wardenfall-only launch RPC is no longer called by the app.
+- Sidewalk personal bests are isolated per account in that browser. Sunset and Pine run session-based exploration; this release does not add cloud game saves.
 - Wardenfall campaign progress and audio preferences are stored separately for each account **in that browser**. They are not cloud saves; progress from the desktop edition is not migrated.
 
 ## Checks
@@ -73,6 +74,10 @@ npm run check
 
 GitHub Actions runs the production build, TypeScript, access-control tests and Wardenfall gameplay/audio regressions. No email is sent by these tests. An opt-in provider test is available in `tests/live-supabase.mjs`; run it only against a project you administer, with a running app and a temporary `ASTRA_QA_ADMIN_KEY` environment variable outside the repository. It creates two marked QA accounts, tests real authentication and RLS, and deletes those accounts afterwards. Never supply the QA admin key to the Next.js process or Vercel.
 
-For silent manual game checks, sign in and visit `/play/wardenfall?silent=1`.
+For silent manual game checks, sign in and use `?silent=1` on `/play/wardenfall`, `/play/sidewalk`, `/play/sunset` or `/play/pine`.
 
-See [validation](docs/VALIDATION.md), [asset credits](CREDITS.md) and the [runtime source manifest](docs/wardenfall-source-manifest.json).
+## Game packaging
+
+The three 3D web copies are built with `python3 scripts/package-games.py /path/to/Games`. Original projects are read-only. The packager follows ESM imports and external GLB resources, copies the explicit runtime assets, then adds account boot, per-game readiness callbacks, silent QA support and return links. No Blender sources or generation logs are shipped. Runtime sizes are approximately 5.4 MiB (Sidewalk), 114.7 MiB (Sunset) and 52.2 MiB (Pine). Sunset and Pine can take longer on their first download; the loader remains visible while preparing their scenes.
+
+See [validation](docs/VALIDATION.md), [asset credits](CREDITS.md) and the [Wardenfall manifest](docs/wardenfall-source-manifest.json) and [3D runtime manifest](docs/runtime-source-manifest.json).

@@ -39,7 +39,7 @@ async function loadAssets(){
  }
  function split(atlas,cols,rows){if(!atlas)return[];return Array.from({length:cols*rows},(_,i)=>{const c=document.createElement('canvas');c.width=256;c.height=256;const g=c.getContext('2d');g.imageSmoothingQuality='high';g.drawImage(atlas,i%cols*atlas.width/cols,Math.floor(i/cols)*atlas.height/rows,atlas.width/cols,atlas.height/rows,0,0,256,256);return c;});}
  walkSprites=split(all[4],6,4);towerSprites=split(all[5],8,5);
- assetsReady=true;cacheBackground();if(!all[0]||!all[1])toast('Some artwork could not load. Check that the assets folder is beside the game.');
+ assetsReady=true;cacheBackground();if(all.every(Boolean))window.AstraGameReady?.();else window.AstraGameError?.();if(!all[0]||!all[1])toast('Some artwork could not load. Check that the assets folder is beside the game.');
 }
 let backgroundCache=document.createElement('canvas');
 function cacheBackground(){backgroundCache.width=1536;backgroundCache.height=1024;const g=backgroundCache.getContext('2d'),im=images[game?.map.id];g.fillStyle='#263d2a';g.fillRect(0,0,1536,1024);if(im){if(game.mapIndex===1){g.translate(1536,0);g.scale(-1,1);}g.drawImage(im,0,0,1536,1024);}}

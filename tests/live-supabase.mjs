@@ -60,7 +60,17 @@ try {
   const library = await (await a.request('/api/library')).json();
   assert.deepEqual(library.favorites, ['wardenfall']);
   assert.ok(library.recent.wardenfall);
-  assert.equal(library.games.filter(game => game.available).length, 1);
+  assert.equal(library.games.filter(game => game.available).length, 4);
+  for (const [id, entry] of Object.entries({sidewalk:'index.html',sunset:'index.html',pine:'demo.html'})) {
+    assert.equal((await a.request('/api/favorite/' + id, {favorite:true})).status, 200);
+    const launch = await a.request('/api/play/' + id, {});
+    assert.equal(launch.status, 200);
+    assert.equal((await launch.json()).url, '/games/' + id + '/' + entry);
+    assert.equal((await a.request('/games/' + id + '/' + entry)).status, 200);
+  }
+  const expanded = await (await a.request('/api/library')).json();
+  assert.equal(expanded.favorites.length, 4);
+  assert.equal(Object.keys(expanded.recent).length, 4);
   assert.equal((await a.request('/api/play/mario', {})).status, 404);
   const otherLibrary = await (await b.request('/api/library')).json();
   assert.deepEqual(otherLibrary.favorites, []);

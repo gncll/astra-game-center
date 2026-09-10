@@ -9,8 +9,9 @@ test('mutations require an allowed origin, JSON and the request header',()=>{
 });
 test('game launch whitelist keeps unavailable cards unavailable',()=>{
  assert.equal(playableGame('wardenfall'),true);
- for(const id of ['mario','sunset','sidewalk','pine']){assert.equal(validGameId(id),true);assert.equal(playableGame(id),false);}
- for(const id of ['../wardenfall','WARDENFALL','unknown',null])assert.equal(playableGame(id),false);
+ for(const id of ['sunset','sidewalk','pine']){assert.equal(validGameId(id),true);assert.equal(playableGame(id),true);}
+ assert.equal(playableGame('mario'),false);
+ for(const id of ['../wardenfall','WARDENFALL','unknown','__proto__','constructor',null])assert.equal(playableGame(id),false);
 });
 test('invalid emails are rejected before contacting the email provider',()=>{
  for(const value of ['',null,'hello','a@b','a\nb@c.com','x'.repeat(255)+'@a.com'])assert.equal(validEmail(value),false);

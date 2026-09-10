@@ -16,7 +16,7 @@ The Supabase migration was applied successfully. The operator confirmed adding t
 - The operator deployed to `https://astra-game-center.vercel.app`. The original release rejected sign-in at its stable production alias; see the correction below. Full inbox sign-in and authenticated game delivery on Vercel remain separate deployment checks.
 - Real token verification and sessions were tested, but inbox delivery was not. The default Supabase sender is not a public production email service; configure SMTP and test an actual email in the intended browser flow.
 - Wardenfall progress is per-account browser storage. Cloud saves and migration of desktop saves are not implemented.
-- Only Wardenfall's runtime is shipped. The other four cards are Coming soon.
+- The initial release shipped only Wardenfall; the expanded release below adds three games, leaving Mario for later.
 - This web packaging pass does not establish new gameplay, audio-quality or sustained-FPS claims.
 
 ## Production alias correction
@@ -24,3 +24,16 @@ The Supabase migration was applied successfully. The operator confirmed adding t
 The operator reported “Please start this action from Game Center.” at the deployed login page. A POST with an intentionally invalid email and the real site's Origin reproduced 403, without sending any email. The original fallback used `VERCEL_URL`, which names the unique build deployment; it did not recognize the stable project address.
 
 The fallback now uses `VERCEL_PROJECT_PRODUCTION_URL` in production, while previews keep their own deployment origin. An explicit `SITE_URL` still takes priority. Three regression cases cover production alias acceptance and foreign origin rejection, preview isolation, and explicit/custom/local origin handling. Production build, all thirteen app checks and the existing gameplay/audio regressions passed locally.
+
+## Four-game release and logo loading
+
+The user confirmed the production email flow works, then requested the remaining locally made games, leaving Mario for last, and a game-logo loading screen. Added the current Sidewalk Session, Sunset Block S04 and Pine Hollow campfire/fishing demo using a repeatable runtime-only packager. The original desktop projects were not modified. The packager follows JavaScript imports with an AST and external GLB resource paths; this caught Kenney’s separate `Textures/colormap.png` dependency. No unexpected files remain outside the allowlist.
+
+Each launch first shows the correct game logo while recording the launch, then keeps a full-screen matching logo over the actual game until its models, textures and scene are ready. Errors expose a reload button; the loader does not use a fake percentage or a fixed expiry timer. Wardenfall uses its real artwork completion, Sidewalk its park initialization, Sunset its scene initializer and Pine its nine-model loading updates. Every game offers a return link. Browser checks were silent.
+
+Validation for this release:
+- Production build and TypeScript passed. Sixteen app tests passed, including anonymous access to every new game entry, GLB models, texture, vendor module, audio and shared loading files; import/GLB dependency completeness; and loading readiness/retry lifecycle. Existing 21 Wardenfall gameplay and 3 audio checks passed.
+- The unchanged Sidewalk source’s eleven physics/session regressions passed, including prompt acceleration, braking, ollie, ramp, grind exit and scoring.
+- Six real-Supabase test groups passed with two temporary QA accounts and no emails. All four game launch routes returned the correct entries, favorites survived launches, all four recent timestamps persisted, and cross-account RLS remained enforced. No new SQL migration was needed: the launch route uses the existing table grants and updates only the current user’s launch timestamp.
+- Local browser at 1280×720: all three new scenes rendered after the appropriate logo launch screen. Sunset’s walk-to-car route reached the car, Enter switched to driving, and Block tour traveled 25 m at the displayed 22 km/h. Sidewalk entered free skate with the real park, HUD and unlimited timer. Pine’s route reached the firewood tree and the chop action ran. Screenshots are local verification artifacts, not source assets.
+- This is a packaging and loading release. No new sustained-FPS, mobile controls, cloud-save or full gameplay-completion claims are made. Heavy 3D scenes retain the current source models, so their first downloads can take longer on slower connections.

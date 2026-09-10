@@ -73,7 +73,7 @@
       ]
     ],
     "artLabel": null,
-    "available": false
+    "available": true
   },
   {
     "id": "mario",
@@ -150,7 +150,7 @@
       ]
     ],
     "artLabel": null,
-    "available": false
+    "available": true
   },
   {
     "id": "pine",
@@ -184,6 +184,6 @@
       ]
     ],
     "artLabel": null,
-    "available": false
+    "available": true
   }
 ]
