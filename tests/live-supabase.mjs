@@ -1,8 +1,8 @@
 // Opt-in provider test. Needs a running app and a QA-only server admin credential.
 // Creates two clearly marked accounts, sends no emails, and deletes them afterwards.
 import assert from 'node:assert/strict';
-import { randomUUID } from 'node:crypto';
-import { writeFile } from 'node:fs/promises';
+import { randomUUID, createHash } from 'node:crypto';
+import { writeFile, readFile } from 'node:fs/promises';
 import { createClient } from '@supabase/supabase-js';
 
 const origin = process.env.SITE_URL || 'http://127.0.0.1:4194';
@@ -95,11 +95,19 @@ try {
   assert.ok((await image.arrayBuffer()).byteLength > 4_500_000);
   assert.equal((await a.request('/games/wardenfall/index.html')).status, 200);
   assert.equal((await a.request('/library')).status, 200);
-  pass('Authenticated dashboard and complete large game asset are served');
+  for (const path of ['/games/sidewalk/models/westside.glb','/games/sunset/models/city.glb','/games/pine/models/demo/survivor-actions.glb']) {
+    const response = await a.request(path);
+    assert.equal(response.status, 200, path);
+    const actual = Buffer.from(await response.arrayBuffer());
+    const expected = await readFile(new URL('../public' + path, import.meta.url));
+    const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+    assert.equal(hash(actual), hash(expected), path + ' must arrive complete and unchanged');
+  }
+  pass('Authenticated dashboard and complete large models from all four games are served');
 
   assert.equal((await a.request('/auth/signout', {})).status, 200);
   assert.equal((await a.request('/api/session')).status, 401);
-  assert.equal((await a.request('/games/wardenfall/game.js')).status, 401);
+  for (const path of ['/games/wardenfall/game.js','/games/sidewalk/models/westside.glb','/games/sunset/models/city.glb','/games/pine/demo.js','/games/loading.mjs']) assert.equal((await a.request(path)).status, 401, path);
   pass('Sign-out removes app access and direct game file access');
 
   // Optional handoff to a real browser. The file contains a short-lived, one-use link.
