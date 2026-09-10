@@ -11,7 +11,7 @@ try {
     const script = document.querySelector('script[data-game-entry]');
     const entry = new URL(script.dataset.gameEntry, location.href);
     if (entry.origin !== location.origin || !entry.pathname.startsWith('/games/')) throw new Error('Invalid game entry');
-    loading.update('Loading the world, models and textures…');
+    loading.update('Loading your game…');
     await import(entry.href);
   }
 } catch (error) {
