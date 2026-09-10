@@ -41,7 +41,17 @@ Import this GitHub repository. Use **Next.js**, the repository root, `npm run bu
 | `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | Publishable key, or legacy anon key |
 | `SITE_URL` | The final HTTPS origin, without `/auth/callback` |
 
-If the domain is not assigned yet, omit `SITE_URL` for the first build; the app uses Vercel's assigned deployment URL. Once the stable domain is known, set `SITE_URL` to that origin and redeploy. Update Supabase Site URL and add the exact HTTPS callback to its Redirect URLs. The local callback may stay in the list.
+If the domain is not assigned yet, omit `SITE_URL` for the first build. Production deployments use `VERCEL_PROJECT_PRODUCTION_URL` (the stable production alias); preview deployments use their own `VERCEL_URL`. Enable Vercel's system environment variables for this automatic detection. Once the stable domain is known, explicitly setting `SITE_URL` to that origin is recommended; redeploy after changing environment variables. Update Supabase Site URL and add the exact HTTPS callback to its Redirect URLs. The local callback may stay in the list.
+
+Current production settings:
+
+```env
+SITE_URL=https://astra-game-center.vercel.app
+```
+
+Supabase Site URL: `https://astra-game-center.vercel.app`. Allowed callback: `https://astra-game-center.vercel.app/auth/callback`.
+
+The unique build hostname is not the same origin as the stable production address; allowing only `VERCEL_URL` incorrectly rejects sign-in requests from the public site. See [Vercel's system URL variables](https://vercel.com/docs/environment-variables/system-environment-variables#vercel_project_production_url).
 
 **No service-role, secret API key or GitHub token is needed by the app.** Keep environment values in Vercel or an ignored local file. For a preview deployment, use its own origin and exact allowed callback if you want to test sign-in there.
 

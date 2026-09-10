@@ -13,8 +13,14 @@ The Supabase migration was applied successfully. The operator confirmed adding t
 ## Scope and remaining deployment checks
 
 - Tests ran on macOS with Node.js 26.7.0. CI uses Node.js 24.
-- Vercel has not been deployed from this checkout yet. Re-check protected static delivery on the actual deployment and configure its canonical origin and callback.
+- The operator deployed to `https://astra-game-center.vercel.app`. The original release rejected sign-in at its stable production alias; see the correction below. Full inbox sign-in and authenticated game delivery on Vercel remain separate deployment checks.
 - Real token verification and sessions were tested, but inbox delivery was not. The default Supabase sender is not a public production email service; configure SMTP and test an actual email in the intended browser flow.
 - Wardenfall progress is per-account browser storage. Cloud saves and migration of desktop saves are not implemented.
 - Only Wardenfall's runtime is shipped. The other four cards are Coming soon.
 - This web packaging pass does not establish new gameplay, audio-quality or sustained-FPS claims.
+
+## Production alias correction
+
+The operator reported “Please start this action from Game Center.” at the deployed login page. A POST with an intentionally invalid email and the real site's Origin reproduced 403, without sending any email. The original fallback used `VERCEL_URL`, which names the unique build deployment; it did not recognize the stable project address.
+
+The fallback now uses `VERCEL_PROJECT_PRODUCTION_URL` in production, while previews keep their own deployment origin. An explicit `SITE_URL` still takes priority. Three regression cases cover production alias acceptance and foreign origin rejection, preview isolation, and explicit/custom/local origin handling. Production build, all thirteen app checks and the existing gameplay/audio regressions passed locally.
