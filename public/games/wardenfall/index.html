@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101819"><title>Wardenfall — Guardians of the Realm</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23bc985a' d='M8 6h48v32L32 60 8 38z'/%3E%3Cpath fill='%23121c20' d='m18 18 7 24 7-15 7 15 7-24h-7l-3 11-4-11-4 11-3-11z'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css?v=1.3.0"></head>
+<body>
+<svg class="svg-defs" aria-hidden="true"><defs>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6z"/><path d="m8 12 3 3 5-6"/></symbol>
+<symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="m12 7 4 5-4 5-4-5z"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20 4 12C-1 6 7 1 12 7c5-6 13-1 8 5z"/></symbol>
+<symbol id="i-wave" viewBox="0 0 24 24"><path d="m5 20 14-16M5 4l14 16M4 17l4 4M16 21l4-4M3 3l3 1-2 2zM21 3l-3 1 2 2z"/></symbol>
+<symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14" stroke-width="4"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 12 8-12 8z"/></symbol>
+<symbol id="i-sound" viewBox="0 0 24 24"><path d="M4 9h4l5-5v16l-5-5H4zM17 8c3 2 3 6 0 8M20 5c5 4 5 10 0 14"/></symbol>
+<symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9h4l5-5v16l-5-5H4zM17 9l5 6M22 9l-5 6"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24"><path d="m3 5 6-2 6 3 6-2v15l-6 2-6-3-6 2zM9 3v15M15 6v15"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5C9 2 4 3 2 4v15c4-1 7-1 10 2 3-3 6-3 10-2V4c-4-1-7-2-10 1v16"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 1v6M12 17v6M1 12h6M17 12h6"/></symbol>
+<symbol id="i-fire" viewBox="0 0 24 24"><path d="M13 2c1 7-6 6-3 11 0 0 4 0 5-5 6 6 6 13-3 13C1 21 3 12 7 8c0 5 5 1 6-6z"/></symbol>
+<symbol id="i-snow" viewBox="0 0 24 24"><path d="M12 2v20M3 7l18 10M3 17 21 7M9 4l3 3 3-3M9 20l3-3 3 3M3 10l4-1V5M21 14l-4 1v4M3 14l4 1v4M21 10l-4-1V5"/></symbol>
+<symbol id="i-cross" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+<symbol id="i-flower" viewBox="0 0 24 24"><path d="M12 21V10M12 15C2 16 3 6 3 6s9 0 9 9M12 12C12 2 21 3 21 3s0 9-9 9"/></symbol>
+<symbol id="i-max" viewBox="0 0 24 24"><path d="M3 9V3h6M15 3h6v6M21 15v6h-6M9 21H3v-6"/></symbol>
+</defs></svg>
+<div class="app">
+ <header class="topbar">
+  <a class="brand" href="#" aria-label="Wardenfall home"><span class="crest">W</span><span>WARDENFALL<small>GUARDIANS OF THE REALM</small></span></a>
+  <nav aria-label="Main navigation"><button class="nav-button active" data-modal="campaign"><svg><use href="#i-map"/></svg>Campaign</button><button class="nav-button" data-modal="talents"><svg><use href="#i-star"/></svg>Talents<span class="badge" id="talent-badge">0</span></button><button class="nav-button" data-modal="codex"><svg><use href="#i-book"/></svg>Field guide</button></nav>
+  <a class="nav-button" href="/library">← Game Center</a><div class="realm"><span class="status-dot"></span>ASTRA CAMPAIGN<span class="avatar">A</span></div>
+ </header>
+ <main>
+  <section class="heading"><div><div class="eyebrow"><span id="region">KINGDOM OF ELDERGLEN</span><span class="tiny-line"></span> CHAPTER <span id="chapter">I</span></div><h1 id="map-title">The Verdant March</h1><p id="map-subtitle">Hold the road. Protect the realm.</p></div><div class="resources"><div class="resource gold"><svg><use href="#i-coin"/></svg><div><small>GOLD</small><strong id="gold">420</strong></div></div><div class="resource life"><svg><use href="#i-heart"/></svg><div><small>STRONGHOLD</small><strong><span id="lives">20</span><em> / 20</em></strong></div></div><div class="resource"><svg><use href="#i-wave"/></svg><div><small>WAVE</small><strong><span id="wave">0</span><em> / 10</em></strong></div></div></div></section>
+  <div class="game-layout">
+   <div class="battle-column">
+    <section class="battlefield" aria-label="Battlefield">
+     <canvas id="game" aria-label="Tower defense battlefield. Choose a tower, then a marked build site. H moves the hero; Q and E target spells." tabindex="0"></canvas>
+     <div id="build-sites" class="build-sites"></div>
+     <div class="board-top"><div class="battle-tag"><span class="status-dot"></span><span id="phase-label">PREPARATION</span></div><div class="board-controls"><button id="pause" title="Pause (Space)" aria-label="Pause"><svg><use href="#i-pause"/></svg></button><button id="speed" title="Game speed" aria-label="Game speed">1×</button><button id="sound" class="sound-control" title="Toggle sound" aria-label="Mute sound"><svg><use href="#i-sound"/></svg><span>Enable sound</span></button><button id="audio-settings" title="Voice and sound settings" aria-label="Sound settings" aria-expanded="false">⚙</button><button id="close-view" class="close-control" title="Follow the battle up close (Z)" aria-pressed="false"><svg><use href="#i-target"/></svg><span>Look closer</span></button><button id="fullscreen" title="Expand battlefield" aria-label="Expand battlefield"><svg><use href="#i-max"/></svg></button></div></div>
+     <section id="audio-panel" class="audio-panel" hidden aria-label="Sound and voice settings"><div class="panel-label"><span>SOUND &amp; VOICES</span><button id="audio-close" aria-label="Close sound settings">×</button></div><label class="audio-master"><input id="audio-enabled" type="checkbox" checked> Sound enabled</label><label>Character voices <input id="voice-volume" type="range" min="0" max="100" value="95" aria-label="Character voice volume"></label><label>Battle effects <input id="effects-volume" type="range" min="0" max="100" value="55" aria-label="Battle effect volume"></label><label>Forest <input id="ambience-volume" type="range" min="0" max="100" value="16" aria-label="Forest volume"></label><label>Flowing water <input id="water-volume" type="range" min="0" max="100" value="12" aria-label="Flowing water volume"></label><button id="test-voice" class="gold-button">Test voice</button><small id="audio-status" role="status">Click anywhere to start voices and battle sounds.</small></section><div id="voice-caption" class="voice-caption" role="status"></div><div class="entry-marker"><svg><use href="#i-wave"/></svg><span>ENEMY APPROACH</span></div>
+     <div id="camera-label" class="camera-label" hidden>CLOSE VIEW · AUTO FOLLOW · Z TO EXIT</div><div id="boss-bar" class="boss-bar" hidden><div><strong>GORATH THE SIEGEBREAKER</strong><small id="boss-phase"></small></div><span class="boss-health-track"><i id="boss-hp"></i></span><small id="boss-health"></small></div><div id="wave-banner" class="wave-banner" aria-live="polite"></div>
+     <div id="board-hint" class="board-hint"><svg><use href="#i-target"/></svg> Select a defense below, then choose a build site.</div>
+     <div class="board-bottom"><span id="weather-label">ELDERGLEN • LATE SUMMER</span><span class="fps"><i></i><span id="fps">—</span> FPS</span></div>
+     <div class="paused-screen" id="paused-screen" hidden><span class="eyebrow">TAKE A BREATH, COMMANDER</span><h2>Battle paused</h2><button class="gold-button" id="resume">Return to battle <svg><use href="#i-play"/></svg></button></div>
+    </section>
+    <section class="build-panel"><div class="panel-label"><span>BUILD YOUR DEFENSES · 8 CLASSES · 5 LEVELS</span><small>Choose a tower <span class="muted">/</span> <kbd>1</kbd>–<kbd>8</kbd></small></div><div class="tower-deck" id="tower-deck"></div></section>
+    <div class="battle-footer"><span><svg><use href="#i-shield"/></svg> Every road leads to a last stand.</span><button data-modal="guide">How to play <span>?</span></button></div>
+   </div>
+   <aside class="sidebar">
+    <section class="next-wave panel"><div class="panel-label"><span id="next-label">NEXT WAVE</span><small id="next-number">01 / 10</small></div><div class="wave-info"><div class="enemy-portrait sprite sprite-6"></div><div><h3 id="wave-name">The first incursion</h3><p id="wave-description">Orc raiders approach</p></div></div><div class="enemy-chips" id="enemy-chips"></div><button class="gold-button" id="start-wave">Begin wave <svg><use href="#i-arrow"/></svg></button><div class="wave-progress" id="wave-progress" hidden><div><i id="wave-fill"></i></div><small id="wave-remaining"></small></div><label class="auto-wave"><input id="auto-wave" type="checkbox"> Automatically call next wave</label></section>
+    <section class="inspection panel" id="inspection"></section>
+    <section class="hero-panel panel"><div class="panel-label"><span>YOUR CHAMPION</span><small id="hero-level">LVL 1</small></div><button id="hero-select" class="hero-select"><span class="hero-portrait sprite sprite-5"></span><span><strong>Aldric Dawnshield</strong><small>Paladin of the Silver Oath</small><span class="hp-track"><i id="hero-hp"></i></span></span><kbd>H</kbd></button><div class="spell-bar"><button id="spell-meteor" class="spell fire" title="Meteor: 230+ area damage. 30-second cooldown. Q"><kbd>Q</kbd><svg><use href="#i-fire"/></svg><small>Meteor</small><span class="cooldown"></span></button><button id="spell-frost" class="spell ice" title="Winter's grasp: freeze an area for 3.8 seconds. E"><kbd>E</kbd><svg><use href="#i-snow"/></svg><small>Winter's grasp</small><span class="cooldown"></span></button><button id="spell-rally" class="spell holy" title="Rally: restore champion and boost tower fire rate for 8 seconds. R"><kbd>R</kbd><svg><use href="#i-cross"/></svg><small>Rally</small><span class="cooldown"></span></button></div></section>
+    <div class="save-status"><span class="status-dot"></span> Progress saved for this account in this browser</div>
+   </aside>
+  </div>
+ </main>
+</div>
+<div id="toast" role="status"></div>
+<dialog id="modal"><button class="modal-close" aria-label="Close dialog"><svg><use href="#i-close"/></svg></button><div id="modal-content"></div></dialog>
+<audio id="voice-player" preload="auto" src="assets/audio/ready.mp3"></audio><script src="account.js"></script>
+</body></html>

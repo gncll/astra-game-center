@@ -1,0 +1,189 @@
+[
+  {
+    "id": "wardenfall",
+    "name": "Wardenfall",
+    "genre": "Strategy",
+    "label": "Tower defense",
+    "accent": "#c7ac69",
+    "tagline": "You are the last line of defense.",
+    "description": "Defend the paths of Elderglen. Place your towers, command your champion, and build the right defense for every wave.",
+    "features": [
+      "3-stage campaign",
+      "8 tower classes",
+      "Champion & spells"
+    ],
+    "controls": [
+      [
+        "1 – 8",
+        "Select tower"
+      ],
+      [
+        "Click",
+        "Build / upgrade"
+      ],
+      [
+        "H",
+        "Command champion"
+      ],
+      [
+        "Q / E / R",
+        "Cast spells"
+      ],
+      [
+        "Space",
+        "Pause"
+      ]
+    ],
+    "artLabel": "Game map",
+    "available": true
+  },
+  {
+    "id": "sunset",
+    "name": "Sunset Block",
+    "genre": "Explore",
+    "label": "City & driving",
+    "accent": "#df875c",
+    "tagline": "Your city. The evening is just beginning.",
+    "description": "Explore the neighborhood in the golden evening light. Jump into your sports car, cruise palm-lined streets, and tune in to Sunset FM.",
+    "features": [
+      "Walking & driving",
+      "Two city blocks",
+      "Sunset FM radio"
+    ],
+    "controls": [
+      [
+        "W A S D",
+        "Walk / drive"
+      ],
+      [
+        "Shift",
+        "Run"
+      ],
+      [
+        "E",
+        "Enter / exit car"
+      ],
+      [
+        "Space",
+        "Brake"
+      ],
+      [
+        "Drag mouse",
+        "Rotate camera"
+      ]
+    ],
+    "artLabel": null,
+    "available": false
+  },
+  {
+    "id": "mario",
+    "name": "Super Mario",
+    "genre": "Arcade",
+    "label": "Classic platformer",
+    "accent": "#ec646a",
+    "tagline": "Just one more jump.",
+    "description": "A three-stage adventure from the grasslands to the caves and into the castle. Collect coins and make your way to the finish flag.",
+    "features": [
+      "3 stages",
+      "5 lives",
+      "Local fan adaptation"
+    ],
+    "controls": [
+      [
+        "← → / A D",
+        "Move"
+      ],
+      [
+        "Space",
+        "Jump"
+      ],
+      [
+        "Shift",
+        "Run / fire"
+      ],
+      [
+        "↓",
+        "Crouch"
+      ],
+      [
+        "P",
+        "Pause"
+      ]
+    ],
+    "artLabel": null,
+    "note": "An Infinite Mario HTML5 fan adaptation. Not affiliated with Nintendo.",
+    "available": false
+  },
+  {
+    "id": "sidewalk",
+    "name": "Sidewalk Session",
+    "genre": "Sports",
+    "label": "Skateboarding",
+    "accent": "#5acabd",
+    "tagline": "Find your own line.",
+    "description": "Westside Park is waiting. Build speed, launch off the ramps, and land your tricks cleanly. Or forget the clock and enjoy a free skate.",
+    "features": [
+      "2-minute score runs",
+      "Free skate",
+      "Flips, grabs & grinds"
+    ],
+    "controls": [
+      [
+        "W A S D",
+        "Push / steer"
+      ],
+      [
+        "Hold & release Space",
+        "Ollie"
+      ],
+      [
+        "J / K / L",
+        "Flip / grab / grind"
+      ],
+      [
+        "R",
+        "Return to start"
+      ],
+      [
+        "P / Esc",
+        "Pause"
+      ]
+    ],
+    "artLabel": null,
+    "available": false
+  },
+  {
+    "id": "pine",
+    "name": "Pine Hollow",
+    "genre": "Explore",
+    "label": "Forest adventure",
+    "accent": "#87b594",
+    "tagline": "First fire. First warm meal.",
+    "description": "Follow the forest trail and explore the cabin. Gather wood, light a fire, catch a fish, and cook your first warm meal of the day.",
+    "features": [
+      "A cabin to explore",
+      "Campfire & fishing",
+      "Two quest chains"
+    ],
+    "controls": [
+      [
+        "W A S D",
+        "Walk"
+      ],
+      [
+        "E",
+        "Interact / gather"
+      ],
+      [
+        "Drag mouse",
+        "Look around"
+      ],
+      [
+        "Scroll",
+        "Camera distance"
+      ]
+    ],
+    "artLabel": null,
+    "available": false
+  }
+]

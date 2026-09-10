@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101116"><title>Astra Game Center</title><link rel="icon" href="/center/brand.svg" type="image/svg+xml"><link rel="stylesheet" href="/center/style.css"></head>
+<body>
+<a class="skip" href="#collection">Skip to games</a>
+<aside class="sidebar">
+  <a href="#discover" class="brand" aria-label="Astra Game Center home"><img src="/center/brand.svg" width="43" height="43" alt=""><span>astra<small>GAME CENTER</small></span></a>
+  <span class="nav-caption">YOUR PLAYSPACE</span>
+  <nav aria-label="Main navigation"><button class="nav-item active" data-view="discover" aria-current="page"><i data-icon="compass"></i>Discover</button><button class="nav-item" data-view="library"><i data-icon="grid"></i>My Library <b>5</b></button><button class="nav-item" data-view="favorites"><i data-icon="heart"></i>Favorites <b id="favorite-count">0</b></button></nav>
+  <div class="sidebar-divider"></div><span class="nav-caption">QUICK ACCESS</span><div id="quick-games" class="quick-games"></div>
+  <div class="sidebar-bottom"><div class="local-badge"><span class="status-dot"></span>YOUR COLLECTION</div><p>A small collection.<br>A world of possibilities.</p><div class="profile"><span class="avatar">A</span><div><span id="player-name">Player</span><small>Your library</small></div><button class="signout-button" id="signout" aria-label="Sign out" title="Sign out">↗</button></div></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><div class="breadcrumb">Your playspace <span>/</span> <strong id="breadcrumb">Discover</strong></div><label class="search"><i data-icon="search"></i><input id="search" type="search" placeholder="Find your next game…" aria-label="Search games" autocomplete="off"><kbd>⌘ K</kbd></label><span class="top-tag">Enter your world <span>✦</span></span></header>
+  <main>
+    <div class="page-heading"><div><p class="eyebrow">WELCOME BACK</p><h1 id="page-title">Time for a little play.</h1></div><p class="collection-count"><strong>5</strong> games. So much to explore.</p></div>
+    <section id="feature" class="feature" aria-label="Featured game"></section>
+    <section id="collection" class="collection" aria-labelledby="collection-title">
+      <div class="section-heading"><div><h2 id="collection-title">Your collection <span id="result-count">5</span></h2><p id="collection-caption">The worlds you love, just a click away.</p></div><label class="sort"><i data-icon="sort"></i><select id="sort" aria-label="Sort games"><option value="curated">Collection order</option><option value="name">Name A–Z</option><option value="recent">Recently opened</option></select></label></div>
+      <div class="filters" role="group" aria-label="Game genres"><button class="filter active" data-filter="all" aria-pressed="true">All</button><button class="filter" data-filter="Explore" aria-pressed="false">Explore</button><button class="filter" data-filter="Arcade" aria-pressed="false">Arcade</button><button class="filter" data-filter="Sports" aria-pressed="false">Sports</button><button class="filter" data-filter="Strategy" aria-pressed="false">Strategy</button></div>
+      <div id="games" class="game-grid" aria-live="polite"><div class="loading-state"><span class="spinner"></span> Loading your collection…</div></div>
+      <div id="empty" class="empty-state" hidden><i data-icon="search"></i><h3 id="empty-title">No games here yet.</h3><p id="empty-copy">Try a different search or genre.</p><button class="soft-button" id="clear-filters">Show all games</button></div>
+    </section>
+    <section id="recent-section" class="recent-section" aria-labelledby="recent-title" hidden><div class="section-heading"><h2 id="recent-title">One more round?</h2><span>Recently opened</span></div><div id="recent-games" class="recent-games"></div></section>
+    <footer><span class="footer-brand">✦ &nbsp; ASTRA GAME CENTER</span><span>Your games. Your space.</span><span class="footer-local"><span class="status-dot"></span> Early access collection</span></footer>
+  </main>
+</div>
+<dialog id="game-dialog" aria-labelledby="detail-title"><div id="detail-content"></div></dialog>
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="/center/app.js"></script>
+</body></html>
