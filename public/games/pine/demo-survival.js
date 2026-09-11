@@ -5,9 +5,9 @@ export function createSurvival(){return{hits:0,fall:0,wood:0,woodCollected:false
 function emit(s,type){s.events.push(type);}
 export function survivalInteraction(s,p){
  if(s.action){if(s.action.kind==='fish'&&s.action.phase==='bite'&&near(p,FISH_STOP,1.15))return{kind:'reel',label:'E · Reel in — now!',target:POND};return null;}
- if(!s.woodCollected&&near(p,CUT_TREE,1.65)){
-  if(s.hits<4)return{kind:'chop',label:`E · Chop tree · ${s.hits} / 4`,target:CUT_TREE};
-  if(s.fall>=2)return{kind:'wood',label:'E · Collect 3 logs',target:LOG_PICKUP};
+ if(!s.woodCollected){
+  if(s.hits<4&&near(p,CUT_TREE,1.65))return{kind:'chop',label:`E · Chop tree · ${s.hits} / 4`,target:CUT_TREE};
+  if(s.hits>=4&&s.fall>=2&&near(p,LOG_PICKUP,1.65))return{kind:'wood',label:'E · Collect 3 logs',target:LOG_PICKUP};
  }
  if(near(p,CAMP,1.85)){
   if(!s.fire&&s.wood>=3)return{kind:'light',label:'E · Build & light fire · 3 logs',target:CAMP};
@@ -20,7 +20,10 @@ export function survivalInteraction(s,p){
 // Explain unavailable actions at the place where the player tries them.
 export function survivalHint(s,p){
  if(s.action||survivalInteraction(s,p))return '';
- if(!s.woodCollected&&near(p,CUT_TREE,2.7))return s.hits>=4?'Wait for the tree to finish falling, then press E to collect the 3 logs.':'Move closer to the marked pine, then press E to chop.';
+ if(!s.woodCollected){
+  if(s.hits>=4&&near(p,LOG_PICKUP,2.7))return s.fall<2?'Wait for the tree to finish falling, then press E to collect the 3 logs.':'Move closer to the pile of logs, then press E to collect them.';
+  if(s.hits<4&&near(p,CUT_TREE,2.7))return 'Move closer to the marked pine, then press E to chop.';
+ }
  if(near(p,CAMP,2.8)){
   if(!s.fire&&s.wood<3)return s.hits>=4?'Collect the 3 logs beside the fallen tree first, then bring them here.':`The fire needs 3 logs. You have ${s.wood}. Chop the marked pine, then collect its wood.`;
   if(!s.fire)return 'Move closer to the stone fire ring, then press E to light it.';

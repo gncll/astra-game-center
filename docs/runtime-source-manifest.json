@@ -889,8 +889,8 @@
     {
       "source": "demo-survival.js",
       "path": "demo-survival.js",
-      "bytes": 5619,
-      "sha256": "7d54d21f7ffacb586a60125bdd165d405a390544e2fab512d22ed41e7f196082"
+      "bytes": 5785,
+      "sha256": "6b33f2f61dac84040fe8e6812096a47a733dd35d1a69dddb5a0fb75c105e6992"
     },
     {
       "source": "demo-world.js",
