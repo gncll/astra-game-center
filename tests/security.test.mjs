@@ -10,7 +10,7 @@ test('mutations require an allowed origin, JSON and the request header',()=>{
 test('game launch whitelist keeps unavailable cards unavailable',()=>{
  assert.equal(playableGame('wardenfall'),true);
  for(const id of ['sunset','sidewalk','pine']){assert.equal(validGameId(id),true);assert.equal(playableGame(id),true);}
- assert.equal(playableGame('mario'),false);
+ assert.equal(playableGame('mario'),false);assert.equal(validGameId('mario'),false);
  for(const id of ['../wardenfall','WARDENFALL','unknown','__proto__','constructor',null])assert.equal(playableGame(id),false);
 });
 test('invalid emails are rejected before contacting the email provider',()=>{
@@ -18,6 +18,6 @@ test('invalid emails are rejected before contacting the email provider',()=>{
  assert.equal(validEmail('player@example.com'),true);
 });
 test('library conversion preserves independent favorites and launch dates',()=>{
- const rows=[{game_id:'wardenfall',favorite:true,last_launched_at:'2026-09-10T10:00:00Z'},{game_id:'pine',favorite:true,last_launched_at:null},{game_id:'sunset',favorite:false,last_launched_at:null}];
+ const rows=[{game_id:'wardenfall',favorite:true,last_launched_at:'2026-09-10T10:00:00Z'},{game_id:'pine',favorite:true,last_launched_at:null},{game_id:'sunset',favorite:false,last_launched_at:null},{game_id:'mario',favorite:true,last_launched_at:'2026-09-10T10:00:00Z'}];
  assert.deepEqual(libraryRows(rows),{favorites:['wardenfall','pine'],recent:{wardenfall:'2026-09-10T10:00:00Z'}});
 });

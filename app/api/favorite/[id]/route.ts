@@ -10,5 +10,5 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
   const result = await account.client.rpc('set_game_favorite', { p_game_id: id, p_favorite: body.favorite });
   if (result.error) return json({ error: 'Your favorite could not be saved. Please try again.' }, 503);
   const { data, error } = await account.client.from('game_library').select('game_id').eq('user_id', account.user.id).eq('favorite', true);
-  return error ? json({ error: 'Please refresh your library.' }, 503) : json({ favorites: (data || []).map(row => row.game_id) });
+  return error ? json({ error: 'Please refresh your library.' }, 503) : json({ favorites: (data || []).filter(row => validGameId(row.game_id)).map(row => row.game_id) });
 }

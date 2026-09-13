@@ -1,6 +1,6 @@
 # Astra Game Center
 
-An English game library with the original charcoal and lavender interface, five game covers, Supabase email sign-in, favorites and recent launches. **Wardenfall, Sunset Block, Sidewalk Session and Pine Hollow are playable.** Super Mario remains marked Coming soon. Each game starts with its own logo and a loading screen that closes when its assets and scene are ready. Failed loads offer a retry.
+An English game library with the original charcoal and lavender interface, four game covers, Supabase email sign-in, favorites and recent launches. **Wardenfall, Sunset Block, Sidewalk Session and Pine Hollow are playable.** Mario was removed from the collection at the owner’s request on 13 September 2026. Its local source project remains separate. Each game starts with its own logo and a loading screen that closes when its assets and scene are ready. Failed loads offer a retry.
 
 Games run in the player's browser. The original Mac desktop applications are separate from this repository.
 

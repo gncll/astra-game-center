@@ -53,3 +53,9 @@ After the tree fell, collection incorrectly measured distance from the trunk ins
 Validation: production build and TypeScript passed; 19 app tests (three new Pine cases), 21 Wardenfall gameplay and three audio regressions passed. The original Pine project passed 16 S01/S02 tests. New regressions exercise reachable pickup outside the old trunk radius, interaction gates and the complete timed wood/fire/fish/cook/eat chain.
 
 Before publishing this correction, a real silent browser session on production completed four axe hits, collecting three logs, lighting the fire, casting and reacting to the visible bite prompt, catching one raw fish, returning to the fire and completing the five-second cooking action. The rendered result showed `MISSION COMPLETE · 4 / 4`, `Dinner is ready`, zero raw fish and one cooked fish. The user's exact failing interaction was not observed and no independent cooking failure was reproduced. The corrected pickup position is covered by the movement-based regression; the browser run described here used the preceding deployment. Local screenshot and accessibility evidence remain ignored under `artifacts/pine-recheck/`. QA used a disposable real provider account and sent no email.
+
+## Mario removal — 13 September 2026
+
+The owner requested removing Mario. Its catalog card, cover and Arcade-only filter were removed; current API routes reject the retired game ID. Historical favorites/history rows are retained in the database but omitted from library results and favorite responses. The featured counter uses the actual catalog length. The original local Mario source was not deleted. No database migration or authentication change is required.
+
+Production build, TypeScript, 19 app tests and the existing 21 Wardenfall gameplay/three audio checks passed before publishing. The catalog contains four playable games and no Mario entry; user library rows are preserved.

@@ -14,7 +14,7 @@
     ],
     "controls": [
       [
-        "1 – 8",
+        "1 \u2013 8",
         "Select tower"
       ],
       [
@@ -74,45 +74,6 @@
     ],
     "artLabel": null,
     "available": true
-  },
-  {
-    "id": "mario",
-    "name": "Super Mario",
-    "genre": "Arcade",
-    "label": "Classic platformer",
-    "accent": "#ec646a",
-    "tagline": "Just one more jump.",
-    "description": "A three-stage adventure from the grasslands to the caves and into the castle. Collect coins and make your way to the finish flag.",
-    "features": [
-      "3 stages",
-      "5 lives",
-      "Local fan adaptation"
-    ],
-    "controls": [
-      [
-        "← → / A D",
-        "Move"
-      ],
-      [
-        "Space",
-        "Jump"
-      ],
-      [
-        "Shift",
-        "Run / fire"
-      ],
-      [
-        "↓",
-        "Crouch"
-      ],
-      [
-        "P",
-        "Pause"
-      ]
-    ],
-    "artLabel": null,
-    "note": "An Infinite Mario HTML5 fan adaptation. Not affiliated with Nintendo.",
-    "available": false
   },
   {
     "id": "sidewalk",
