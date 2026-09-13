@@ -95,7 +95,7 @@ try {
   assert.ok((await image.arrayBuffer()).byteLength > 4_500_000);
   assert.equal((await a.request('/games/wardenfall/index.html')).status, 200);
   assert.equal((await a.request('/library')).status, 200);
-  for (const path of ['/games/sidewalk/models/westside.glb','/games/sunset/models/city.glb','/games/pine/models/demo/survivor-actions.glb']) {
+  for (const path of ['/games/sidewalk/models/westside.glb','/games/sunset/models/city-s05.glb','/games/pine/models/demo/survivor-actions.glb']) {
     const response = await a.request(path);
     assert.equal(response.status, 200, path);
     const actual = Buffer.from(await response.arrayBuffer());
@@ -107,7 +107,7 @@ try {
 
   assert.equal((await a.request('/auth/signout', {})).status, 200);
   assert.equal((await a.request('/api/session')).status, 401);
-  for (const path of ['/games/wardenfall/game.js','/games/sidewalk/models/westside.glb','/games/sunset/models/city.glb','/games/pine/demo.js','/games/loading.mjs']) assert.equal((await a.request(path)).status, 401, path);
+  for (const path of ['/games/wardenfall/game.js','/games/sidewalk/models/westside.glb','/games/sunset/models/city-s05.glb','/games/pine/demo.js','/games/loading.mjs']) assert.equal((await a.request(path)).status, 401, path);
   pass('Sign-out removes app access and direct game file access');
 
   // Optional handoff to a real browser. The file contains a short-lived, one-use link.

@@ -1,6 +1,6 @@
 import * as T from 'three';
 import {clone} from 'three/addons/utils/SkeletonUtils.js';
-import {createResidents,stepResidents,residentFloor,residentsBlock} from './resident-motion.js';
+import {createResidents,stepResidents,residentFloor,residentsBlock} from './resident-motion.js?v=20260911-s06a';
 
 export class Residents {
  constructor(scene,gltf,layout){

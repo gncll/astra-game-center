@@ -10,3 +10,5 @@
 - The Three.js r180 license is retained in both Sunset and Pine vendor folders. `docs/runtime-source-manifest.json` records source-relative paths, sizes and hashes of the original runtime assets before the documented web adaptations.
 - Mario’s catalog card and generated cover were removed on 13 September 2026. Its local source project remains outside this repository.
 - Next.js, React and Supabase dependencies retain their own licenses and notices in the installed packages. This repository does not declare an additional open-source license for the collection's code or artwork.
+
+Sunset S06 adds the collection’s original Blender waterfront, bridge leaves and gates, harbor boat, terminal and airliner. Traffic reuses colored versions of the existing sports-car LOD. Existing asset credits and their limitations continue to apply. `docs/sunset-release-manifest.json` records source and packaged hashes for the 60 shipped files.

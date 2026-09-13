@@ -587,14 +587,14 @@
     {
       "source": "audio.js",
       "path": "audio.js",
-      "bytes": 4415,
-      "sha256": "793226794486c8afacdc18f9003924498310c5528db2ff2308b464c9481b8516"
+      "bytes": 5089,
+      "sha256": "fb0472d470118a456dab8e9cfe845ca96bba46cc4ba0359f387292236ed22ac7"
     },
     {
       "source": "city-lights.js",
       "path": "city-lights.js",
-      "bytes": 5179,
-      "sha256": "be7451cb260c074d3af71767776dcebaaee138d629e0aad121c8fb324fa26d2b"
+      "bytes": 5264,
+      "sha256": "010ea5696a0dc110f81bf9e1322e851085effa4c6138a514346602ccf9e5765b"
     },
     {
       "source": "cruise.js",
@@ -605,32 +605,44 @@
     {
       "source": "district-data.js",
       "path": "district-data.js",
-      "bytes": 2364,
-      "sha256": "d6fc41fd1ccfd9dafdf90cb1c4794af24dcdab92c461ed639d4101d12eb8d736"
+      "bytes": 5204,
+      "sha256": "78f910e650493aeabda8c2773a7176518577809340b355271d43c91772856d1b"
     },
     {
       "source": "district.js",
       "path": "district.js",
-      "bytes": 1017,
-      "sha256": "0f554efa5311d1d645f53378dd7c785d3f55591016e77f671b3e27c0d0f5ad10"
+      "bytes": 1033,
+      "sha256": "0b3f534d9768bb3edf75bb1573d633058142d3153bda293f2023ef95e8c98708"
     },
     {
       "source": "dressing.js",
       "path": "dressing.js",
       "bytes": 2026,
-      "sha256": "74403a16ad47705972ca450c4e62dae0eb5832ae7fd4d046604ae5c61c27a6b1"
+      "sha256": "70e9bdfc834db5dc5748f2a56b9a660f1c417c8efe47b3d230b45a5dc1cc4596"
+    },
+    {
+      "source": "harbor-tour.js",
+      "path": "harbor-tour.js",
+      "bytes": 2154,
+      "sha256": "065ee9ab918b906854c64500849c1441bebe08927ca02c0058bc69ba471155c2"
     },
     {
       "source": "index.html",
       "path": "index.html",
-      "bytes": 4011,
-      "sha256": "dde4b2fe5b1286c4f7341f9f72ab8133ca0ec6f167ba3c93271e08fbe3384188"
+      "bytes": 5087,
+      "sha256": "b4b84fe1e4fa75f93069b3d7f004bc9884c3191c7bcd11a54228d0ba6c07bf19"
     },
     {
       "source": "main.js",
       "path": "main.js",
-      "bytes": 14914,
-      "sha256": "e02abc22065080a20c5d5173c7e611d1fef7d4076b5c6fd6c6339e7f69431932"
+      "bytes": 22251,
+      "sha256": "17892c62daf7dc559007dd85135ac42eb7b82a69380f5462c5d5fe3fd6ff0851"
+    },
+    {
+      "source": "models/airliner-s05.glb",
+      "path": "models/airliner-s05.glb",
+      "bytes": 745456,
+      "sha256": "4d16b2e3b23946335ec18faf3889b6cc22a5b4c769de294c6041b33188d4d42e"
     },
     {
       "source": "models/alex.glb",
@@ -639,16 +651,34 @@
       "sha256": "b988ae0060d003e67e6fa3c23c07b6c83f0b68bb379fee4c81a10426c2f01661"
     },
     {
-      "source": "models/city.glb",
-      "path": "models/city.glb",
-      "bytes": 49816236,
-      "sha256": "0096b9b8dcd6fdf2feec2c55dbc8f40925de2cd8e94d15e112cca3ed5ae2c1c0"
+      "source": "models/bridge-gate-s05.glb",
+      "path": "models/bridge-gate-s05.glb",
+      "bytes": 16516,
+      "sha256": "a36b4fe028b692a252bc02505e73bc203ab061f89503d88bd982a80dedaf25de"
     },
     {
-      "source": "models/district-detail.glb",
-      "path": "models/district-detail.glb",
-      "bytes": 25727780,
-      "sha256": "4f28f9ae702e51f4f026359fda2061006f2dafef3eb2abb3572f521975f5641d"
+      "source": "models/bridge-leaf-s05.glb",
+      "path": "models/bridge-leaf-s05.glb",
+      "bytes": 94900,
+      "sha256": "37fe23daf5762fc8c62b6c9445a090ffb860808287468dc8d3e591ce06a6c81a"
+    },
+    {
+      "source": "models/city-s05.glb",
+      "path": "models/city-s05.glb",
+      "bytes": 81212144,
+      "sha256": "39ab2909a4bf21ca54a242deef91f8d86188e8730a5a4d2684fe50a97da47fe3"
+    },
+    {
+      "source": "models/district-detail-s05.glb",
+      "path": "models/district-detail-s05.glb",
+      "bytes": 14347924,
+      "sha256": "2bccbfb13d55986d2627d9b53b3e98503d8872484ad738445e17ca13568bb130"
+    },
+    {
+      "source": "models/harbor-launch-s05.glb",
+      "path": "models/harbor-launch-s05.glb",
+      "bytes": 47832,
+      "sha256": "3252458a8944f885d2aca7064f9c0373789a1a6002a687fab553d6f582a9c60b"
     },
     {
       "source": "models/parked-sports-car.glb",
@@ -669,28 +699,34 @@
       "sha256": "141bc9182724c14ca07307fe93aca31b05ff8e8dd1dd8d3ac5e1e55d150c0335"
     },
     {
+      "source": "models/waterfront-s05.glb",
+      "path": "models/waterfront-s05.glb",
+      "bytes": 1905420,
+      "sha256": "e9729fe34190dccda55c7b2a3ffa9a776b923c49bad10700d27df1018fdeda57"
+    },
+    {
       "source": "resident-motion.js",
       "path": "resident-motion.js",
-      "bytes": 2732,
-      "sha256": "4a97c0ac536ff7f875fd1ecba13a406451fa3761267ae8999b0d047deecf15d7"
+      "bytes": 2764,
+      "sha256": "8cea653ba3d0bbdf54beba8868f869cecd75006ee8a134bd364225eeaa6bafe3"
     },
     {
       "source": "residents.js",
       "path": "residents.js",
-      "bytes": 2949,
-      "sha256": "a73e2f42f5a138b7dc857e5212c39a2055a140bc28b68808aacffd085c3117d1"
+      "bytes": 2965,
+      "sha256": "34534250f5376c58eac89107d2f9bc5649a94ab65a5becfee887e35f2ad302c3"
     },
     {
       "source": "scene.js",
       "path": "scene.js",
-      "bytes": 12170,
-      "sha256": "9830f62f3b39d937385874c9a1c2a10391812774a3529172698bf5ca0dfce7a0"
+      "bytes": 12990,
+      "sha256": "516689ad9310d009a017426937c76f57eed378191a0eae1d274dc10f8393fc7c"
     },
     {
       "source": "style.css",
       "path": "style.css",
-      "bytes": 6483,
-      "sha256": "e9c414e769dd8f4a4898e2327e4ba56039df4f8261c618fcc6e217bca4e64cba"
+      "bytes": 7359,
+      "sha256": "0c25316ac87e747990d6be5ca6b88ee163974e91cb8e7bbea007ffd858290f83"
     },
     {
       "source": "surface-detail.js",
@@ -699,10 +735,28 @@
       "sha256": "8db789ff9ccdef5c02f11c679c1e41a9c8cd699ac6c4b7000c50c416d00492ac"
     },
     {
+      "source": "traffic-scene.js",
+      "path": "traffic-scene.js",
+      "bytes": 2591,
+      "sha256": "2db3eaea7453c84b49c5da07d3998d8d51e876e4335cbbf9f7d64cadbcf3d1db"
+    },
+    {
+      "source": "traffic.js",
+      "path": "traffic.js",
+      "bytes": 8740,
+      "sha256": "ecbf6d31bf808fd12c0d87d41141b531c6bb00b625693ff0cd425cca67b3b8c2"
+    },
+    {
+      "source": "vehicle-surface.js",
+      "path": "vehicle-surface.js",
+      "bytes": 3475,
+      "sha256": "2d1cd67a7845705ebdad1677b0053a82119ed17aa63150d1d2adbfa4a6c0ce2f"
+    },
+    {
       "source": "vehicle.js",
       "path": "vehicle.js",
-      "bytes": 3821,
-      "sha256": "79123e1a4f8fd1bc373ca2a1e7c30de27608139fdda86498aaa591935eb54e79"
+      "bytes": 6209,
+      "sha256": "fed7f22abd294b1768fa5aaaaefbeceea9f5ded68d5d4f75a664e8b2d4e39a81"
     },
     {
       "source": "vendor/THREE-LICENSE.txt",
@@ -747,16 +801,28 @@
       "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
     },
     {
+      "source": "waterfront-scene.js",
+      "path": "waterfront-scene.js",
+      "bytes": 4669,
+      "sha256": "94bf15327723928c0f4c86d1243c38de4a0ef3adfd25c74e67be0acd215ea986"
+    },
+    {
+      "source": "waterfront.js",
+      "path": "waterfront.js",
+      "bytes": 4917,
+      "sha256": "73049bfde549e10de5b7218c4bc373e41e2a83501bdebdbca7749414cf975b82"
+    },
+    {
       "source": "world-layout.json",
       "path": "world-layout.json",
-      "bytes": 3797,
-      "sha256": "8c9421b926b1580afc9ac1be34724d932bd37e267016557305eb35524bfd06ed"
+      "bytes": 8025,
+      "sha256": "99b2820381e9d574638f08e42956fc0f46b5c916a2a58f4dca6534d53b2d81ef"
     },
     {
       "source": "world.js",
       "path": "world.js",
-      "bytes": 2033,
-      "sha256": "ba54e9ac75236436ba7e629f0f2fd9a0415b1c5a11b9cd8a67b5282427b8178c"
+      "bytes": 2201,
+      "sha256": "d961efc713fdde9ecb5bbef1d08b5e2f1391817431f0cb5ea6c2637f3f531f3d"
     }
   ],
   "pine": [

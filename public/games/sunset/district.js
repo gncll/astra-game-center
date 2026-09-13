@@ -1,4 +1,4 @@
-import {district} from './district-data.js';
+import {district} from './district-data.js?v=20260911-s06a';
 export {district};
 export function onRoad(x,z,inset=0){return district.roads.some(r=>{const lateral=r.axis==='z'?x:z,long=r.axis==='z'?z:x;return Math.abs(lateral-r.at)<r.width/2-inset&&long>=r.min+inset&&long<=r.max-inset;});}
 export function inBounds(x,z,margin=0){const b=district.bounds;return x>=b.minX+margin&&x<=b.maxX-margin&&z>=b.minZ+margin&&z<=b.maxZ-margin;}

@@ -78,6 +78,8 @@ For silent manual game checks, sign in and use `?silent=1` on `/play/wardenfall`
 
 ## Game packaging
 
-The three 3D web copies are built with `python3 scripts/package-games.py /path/to/Games`. Original projects are read-only. The packager follows ESM imports and external GLB resources, copies the explicit runtime assets, then adds account boot, per-game readiness callbacks, silent QA support and return links. No Blender sources or generation logs are shipped. Runtime sizes are approximately 5.4 MiB (Sidewalk), 114.7 MiB (Sunset) and 52.2 MiB (Pine). Sunset and Pine can take longer on their first download; the loader remains visible while preparing their scenes.
+The three 3D web copies are built with `python3 scripts/package-games.py /path/to/Games`. Original projects are read-only. The packager follows ESM imports and external GLB resources, copies the explicit runtime assets, then adds account boot, per-game readiness callbacks, silent QA support and return links. No Blender sources or generation logs are shipped. Runtime sizes are approximately 5.4 MiB (Sidewalk), 136.5 MiB (Sunset) and 52.2 MiB (Pine). Sunset and Pine can take longer on their first download; the loader remains visible while preparing their scenes.
 
 See [validation](docs/VALIDATION.md), [asset credits](CREDITS.md) and the [Wardenfall manifest](docs/wardenfall-source-manifest.json) and [3D runtime manifest](docs/runtime-source-manifest.json).
+
+For a Sunset-only update, run `python3 scripts/package-sunset.py /path/to/Games`. It reads the approved S06 runtime manifest, follows local module imports, and preserves the other game packages. Sunset now includes six blocks, traffic, a working drawbridge, airport landings and car elevation/jump physics. The demo remains session-only.

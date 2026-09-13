@@ -1,5 +1,5 @@
-import {blocked,floorAt} from './world.js';
-import {onRoad} from './district.js';
+import {blocked,floorAt} from './world.js?v=20260911-s06a';
+import {onRoad} from './district.js?v=20260911-s06a';
 
 // Closed pavement paths keep people away from the drivable road network.
 export const RESIDENT_ROUTES=[

@@ -1,0 +1,488 @@
+{
+  "release": "S06",
+  "date": "2026-09-13",
+  "entry": "index.html",
+  "cacheVersion": "20260911-s06a",
+  "files": [
+    {
+      "source": "assets/asphalt_02_diff.jpg",
+      "path": "assets/asphalt_02_diff.jpg",
+      "bytes": 731707,
+      "sha256": "1aa5ce99f58a625c71d48cfc3e68b65ca85ccb00f39e045c0a928608a0ea25ed",
+      "packagedBytes": 731707,
+      "packagedSha256": "1aa5ce99f58a625c71d48cfc3e68b65ca85ccb00f39e045c0a928608a0ea25ed"
+    },
+    {
+      "source": "assets/asphalt_02_nor_gl.jpg",
+      "path": "assets/asphalt_02_nor_gl.jpg",
+      "bytes": 1240122,
+      "sha256": "42a1c381b53204e83a982db2864479a30bc127bbdeebb1006f8ee51bff099df3",
+      "packagedBytes": 1240122,
+      "packagedSha256": "42a1c381b53204e83a982db2864479a30bc127bbdeebb1006f8ee51bff099df3"
+    },
+    {
+      "source": "assets/asphalt_02_rough.jpg",
+      "path": "assets/asphalt_02_rough.jpg",
+      "bytes": 544032,
+      "sha256": "70ba3edc65525eb4dc366cf010ca7ae0bd34e0251ff0225c2dad627a873d0712",
+      "packagedBytes": 544032,
+      "packagedSha256": "70ba3edc65525eb4dc366cf010ca7ae0bd34e0251ff0225c2dad627a873d0712"
+    },
+    {
+      "source": "assets/audio/S01-city.mp3",
+      "path": "assets/audio/S01-city.mp3",
+      "bytes": 129193,
+      "sha256": "ebfba1cec41d44d76ac0abeb54b973d01e30af593d2d7d69e4f8151e6c764be5",
+      "packagedBytes": 129193,
+      "packagedSha256": "ebfba1cec41d44d76ac0abeb54b973d01e30af593d2d7d69e4f8151e6c764be5"
+    },
+    {
+      "source": "assets/audio/S01-door.mp3",
+      "path": "assets/audio/S01-door.mp3",
+      "bytes": 17180,
+      "sha256": "e1bb44821ea9a16e17d675b845ac3364ca15d35d6f39b54b0fe6471f3f1fdbc7",
+      "packagedBytes": 17180,
+      "packagedSha256": "e1bb44821ea9a16e17d675b845ac3364ca15d35d6f39b54b0fe6471f3f1fdbc7"
+    },
+    {
+      "source": "assets/audio/S01-engine.mp3",
+      "path": "assets/audio/S01-engine.mp3",
+      "bytes": 65245,
+      "sha256": "bc63e72965f9a58769011b1ebca3e224b2b5e06e016cb4bbc82e320b719889cd",
+      "packagedBytes": 65245,
+      "packagedSha256": "bc63e72965f9a58769011b1ebca3e224b2b5e06e016cb4bbc82e320b719889cd"
+    },
+    {
+      "source": "assets/audio/S01-ignition.mp3",
+      "path": "assets/audio/S01-ignition.mp3",
+      "bytes": 33062,
+      "sha256": "1669cca2af09eb6ed905e3403085426712193cd370a92f73c43f0718b40f912f",
+      "packagedBytes": 33062,
+      "packagedSha256": "1669cca2af09eb6ed905e3403085426712193cd370a92f73c43f0718b40f912f"
+    },
+    {
+      "source": "assets/audio/radio-dj.mp3",
+      "path": "assets/audio/radio-dj.mp3",
+      "bytes": 57722,
+      "sha256": "83b621741371679560e5ad5d7f736bb3d278c7d658d5e9629aa0f791c74de0f1",
+      "packagedBytes": 57722,
+      "packagedSha256": "83b621741371679560e5ad5d7f736bb3d278c7d658d5e9629aa0f791c74de0f1"
+    },
+    {
+      "source": "assets/audio/radio-night.mp3",
+      "path": "assets/audio/radio-night.mp3",
+      "bytes": 321454,
+      "sha256": "ddb1104c33e13619aada719c6cb9e78581172ff479ec2ffee5418b1991a515e7",
+      "packagedBytes": 321454,
+      "packagedSha256": "ddb1104c33e13619aada719c6cb9e78581172ff479ec2ffee5418b1991a515e7"
+    },
+    {
+      "source": "assets/audio/radio-soul.mp3",
+      "path": "assets/audio/radio-soul.mp3",
+      "bytes": 321454,
+      "sha256": "77a3696ecdeb34a1d6517a983035dd54f856e9a35d695c543dc48155c9e7a542",
+      "packagedBytes": 321454,
+      "packagedSha256": "77a3696ecdeb34a1d6517a983035dd54f856e9a35d695c543dc48155c9e7a542"
+    },
+    {
+      "source": "assets/audio/step-a.mp3",
+      "path": "assets/audio/step-a.mp3",
+      "bytes": 12164,
+      "sha256": "cc080bf3998131cb94ed64e91da304a2c3080c495a7fcda97400a1ed4eb5f0cd",
+      "packagedBytes": 12164,
+      "packagedSha256": "cc080bf3998131cb94ed64e91da304a2c3080c495a7fcda97400a1ed4eb5f0cd"
+    },
+    {
+      "source": "assets/audio/step-b.mp3",
+      "path": "assets/audio/step-b.mp3",
+      "bytes": 12164,
+      "sha256": "4c5bda1d70f6928feb22a54240f7a8b5054c5b31346483b0cdca96b22c323461",
+      "packagedBytes": 12164,
+      "packagedSha256": "4c5bda1d70f6928feb22a54240f7a8b5054c5b31346483b0cdca96b22c323461"
+    },
+    {
+      "source": "assets/concrete_pavement_diff.jpg",
+      "path": "assets/concrete_pavement_diff.jpg",
+      "bytes": 926197,
+      "sha256": "70d3ff969a7421c7ae057b5d16386d11f5e59c6740db643352e1039413f419c4",
+      "packagedBytes": 926197,
+      "packagedSha256": "70d3ff969a7421c7ae057b5d16386d11f5e59c6740db643352e1039413f419c4"
+    },
+    {
+      "source": "assets/concrete_pavement_nor_gl.jpg",
+      "path": "assets/concrete_pavement_nor_gl.jpg",
+      "bytes": 1184345,
+      "sha256": "a5009e409ff0f7b2d19e1316fe5e2b2b4f28e4a6b79990a664be69d4e8a0e690",
+      "packagedBytes": 1184345,
+      "packagedSha256": "a5009e409ff0f7b2d19e1316fe5e2b2b4f28e4a6b79990a664be69d4e8a0e690"
+    },
+    {
+      "source": "assets/concrete_pavement_rough.jpg",
+      "path": "assets/concrete_pavement_rough.jpg",
+      "bytes": 475799,
+      "sha256": "99f81099af07b009134b6a81bf0f95ab16da09c57156cc2ed534975664a68533",
+      "packagedBytes": 475799,
+      "packagedSha256": "99f81099af07b009134b6a81bf0f95ab16da09c57156cc2ed534975664a68533"
+    },
+    {
+      "source": "assets/kloppenheim_06_puresky_2k.hdr",
+      "path": "assets/kloppenheim_06_puresky_2k.hdr",
+      "bytes": 4434394,
+      "sha256": "99451201586489ef3288c97bfac2a2ac232a5491c51a1faf0ec8ea39f3ccd533",
+      "packagedBytes": 4434394,
+      "packagedSha256": "99451201586489ef3288c97bfac2a2ac232a5491c51a1faf0ec8ea39f3ccd533"
+    },
+    {
+      "source": "assets/palm-bark.jpg",
+      "path": "assets/palm-bark.jpg",
+      "bytes": 725265,
+      "sha256": "5c76836b01c3536fa0e24207b67bf4f3315b53ebe2b4ecc6f08dfcf3f8d74929",
+      "packagedBytes": 725265,
+      "packagedSha256": "5c76836b01c3536fa0e24207b67bf4f3315b53ebe2b4ecc6f08dfcf3f8d74929"
+    },
+    {
+      "source": "assets/plastered_wall_02_diff.jpg",
+      "path": "assets/plastered_wall_02_diff.jpg",
+      "bytes": 436395,
+      "sha256": "0a316ffd3f953a902325c06afb5a5863bbf71d13a353f9d85378562adca79603",
+      "packagedBytes": 436395,
+      "packagedSha256": "0a316ffd3f953a902325c06afb5a5863bbf71d13a353f9d85378562adca79603"
+    },
+    {
+      "source": "assets/plastered_wall_02_nor_gl.jpg",
+      "path": "assets/plastered_wall_02_nor_gl.jpg",
+      "bytes": 960241,
+      "sha256": "0f1b4ea0c4707ea133f133c020923bddd8610a43a153281dad15d49f39ad9624",
+      "packagedBytes": 960241,
+      "packagedSha256": "0f1b4ea0c4707ea133f133c020923bddd8610a43a153281dad15d49f39ad9624"
+    },
+    {
+      "source": "assets/plastered_wall_02_rough.jpg",
+      "path": "assets/plastered_wall_02_rough.jpg",
+      "bytes": 173930,
+      "sha256": "6c317c0e647b02259601690bd33501bbc825858c6d1715cd0f8f46a5b51f6db4",
+      "packagedBytes": 173930,
+      "packagedSha256": "6c317c0e647b02259601690bd33501bbc825858c6d1715cd0f8f46a5b51f6db4"
+    },
+    {
+      "source": "audio.js",
+      "path": "audio.js",
+      "bytes": 5089,
+      "sha256": "fb0472d470118a456dab8e9cfe845ca96bba46cc4ba0359f387292236ed22ac7",
+      "packagedBytes": 5089,
+      "packagedSha256": "fb0472d470118a456dab8e9cfe845ca96bba46cc4ba0359f387292236ed22ac7"
+    },
+    {
+      "source": "city-lights.js",
+      "path": "city-lights.js",
+      "bytes": 5264,
+      "sha256": "010ea5696a0dc110f81bf9e1322e851085effa4c6138a514346602ccf9e5765b",
+      "packagedBytes": 5264,
+      "packagedSha256": "010ea5696a0dc110f81bf9e1322e851085effa4c6138a514346602ccf9e5765b"
+    },
+    {
+      "source": "cruise.js",
+      "path": "cruise.js",
+      "bytes": 1565,
+      "sha256": "5f718a65fd63d0aeb29dbe3862e7c9c21bdbdb4e1a96b831fc69c4dde1c3ee53",
+      "packagedBytes": 1565,
+      "packagedSha256": "5f718a65fd63d0aeb29dbe3862e7c9c21bdbdb4e1a96b831fc69c4dde1c3ee53"
+    },
+    {
+      "source": "district-data.js",
+      "path": "district-data.js",
+      "bytes": 5204,
+      "sha256": "78f910e650493aeabda8c2773a7176518577809340b355271d43c91772856d1b",
+      "packagedBytes": 5204,
+      "packagedSha256": "78f910e650493aeabda8c2773a7176518577809340b355271d43c91772856d1b"
+    },
+    {
+      "source": "district.js",
+      "path": "district.js",
+      "bytes": 1033,
+      "sha256": "0b3f534d9768bb3edf75bb1573d633058142d3153bda293f2023ef95e8c98708",
+      "packagedBytes": 1033,
+      "packagedSha256": "0b3f534d9768bb3edf75bb1573d633058142d3153bda293f2023ef95e8c98708"
+    },
+    {
+      "source": "dressing.js",
+      "path": "dressing.js",
+      "bytes": 2026,
+      "sha256": "70e9bdfc834db5dc5748f2a56b9a660f1c417c8efe47b3d230b45a5dc1cc4596",
+      "packagedBytes": 2026,
+      "packagedSha256": "70e9bdfc834db5dc5748f2a56b9a660f1c417c8efe47b3d230b45a5dc1cc4596"
+    },
+    {
+      "source": "harbor-tour.js",
+      "path": "harbor-tour.js",
+      "bytes": 2154,
+      "sha256": "065ee9ab918b906854c64500849c1441bebe08927ca02c0058bc69ba471155c2",
+      "packagedBytes": 2154,
+      "packagedSha256": "065ee9ab918b906854c64500849c1441bebe08927ca02c0058bc69ba471155c2"
+    },
+    {
+      "source": "index.html",
+      "path": "index.html",
+      "bytes": 5087,
+      "sha256": "b4b84fe1e4fa75f93069b3d7f004bc9884c3191c7bcd11a54228d0ba6c07bf19",
+      "packagedBytes": 5618,
+      "packagedSha256": "67cac9591ab2eb42bf8b8b697164c7fecc65a3a841d5e575ed869616939bb378"
+    },
+    {
+      "source": "main.js",
+      "path": "main.js",
+      "bytes": 22251,
+      "sha256": "17892c62daf7dc559007dd85135ac42eb7b82a69380f5462c5d5fe3fd6ff0851",
+      "packagedBytes": 22355,
+      "packagedSha256": "7a118dd977a66046c0e985e9e708a10527c8471215531c323c84a2eb4ae9c81a"
+    },
+    {
+      "source": "models/airliner-s05.glb",
+      "path": "models/airliner-s05.glb",
+      "bytes": 745456,
+      "sha256": "4d16b2e3b23946335ec18faf3889b6cc22a5b4c769de294c6041b33188d4d42e",
+      "packagedBytes": 745456,
+      "packagedSha256": "4d16b2e3b23946335ec18faf3889b6cc22a5b4c769de294c6041b33188d4d42e"
+    },
+    {
+      "source": "models/alex.glb",
+      "path": "models/alex.glb",
+      "bytes": 19849428,
+      "sha256": "b988ae0060d003e67e6fa3c23c07b6c83f0b68bb379fee4c81a10426c2f01661",
+      "packagedBytes": 19849428,
+      "packagedSha256": "b988ae0060d003e67e6fa3c23c07b6c83f0b68bb379fee4c81a10426c2f01661"
+    },
+    {
+      "source": "models/bridge-gate-s05.glb",
+      "path": "models/bridge-gate-s05.glb",
+      "bytes": 16516,
+      "sha256": "a36b4fe028b692a252bc02505e73bc203ab061f89503d88bd982a80dedaf25de",
+      "packagedBytes": 16516,
+      "packagedSha256": "a36b4fe028b692a252bc02505e73bc203ab061f89503d88bd982a80dedaf25de"
+    },
+    {
+      "source": "models/bridge-leaf-s05.glb",
+      "path": "models/bridge-leaf-s05.glb",
+      "bytes": 94900,
+      "sha256": "37fe23daf5762fc8c62b6c9445a090ffb860808287468dc8d3e591ce06a6c81a",
+      "packagedBytes": 94900,
+      "packagedSha256": "37fe23daf5762fc8c62b6c9445a090ffb860808287468dc8d3e591ce06a6c81a"
+    },
+    {
+      "source": "models/city-s05.glb",
+      "path": "models/city-s05.glb",
+      "bytes": 81212144,
+      "sha256": "39ab2909a4bf21ca54a242deef91f8d86188e8730a5a4d2684fe50a97da47fe3",
+      "packagedBytes": 81212144,
+      "packagedSha256": "39ab2909a4bf21ca54a242deef91f8d86188e8730a5a4d2684fe50a97da47fe3"
+    },
+    {
+      "source": "models/district-detail-s05.glb",
+      "path": "models/district-detail-s05.glb",
+      "bytes": 14347924,
+      "sha256": "2bccbfb13d55986d2627d9b53b3e98503d8872484ad738445e17ca13568bb130",
+      "packagedBytes": 14347924,
+      "packagedSha256": "2bccbfb13d55986d2627d9b53b3e98503d8872484ad738445e17ca13568bb130"
+    },
+    {
+      "source": "models/harbor-launch-s05.glb",
+      "path": "models/harbor-launch-s05.glb",
+      "bytes": 47832,
+      "sha256": "3252458a8944f885d2aca7064f9c0373789a1a6002a687fab553d6f582a9c60b",
+      "packagedBytes": 47832,
+      "packagedSha256": "3252458a8944f885d2aca7064f9c0373789a1a6002a687fab553d6f582a9c60b"
+    },
+    {
+      "source": "models/parked-sports-car.glb",
+      "path": "models/parked-sports-car.glb",
+      "bytes": 1222352,
+      "sha256": "37ba6d41bc15b02fc355e4a65bb1cd00ecf82469bb692be5e35ac36e95c4a760",
+      "packagedBytes": 1222352,
+      "packagedSha256": "37ba6d41bc15b02fc355e4a65bb1cd00ecf82469bb692be5e35ac36e95c4a760"
+    },
+    {
+      "source": "models/resident.glb",
+      "path": "models/resident.glb",
+      "bytes": 2612600,
+      "sha256": "ce31dd5623e8f73c6dfa1b6084da95d0c02294348b102b869598ba607870a2c2",
+      "packagedBytes": 2612600,
+      "packagedSha256": "ce31dd5623e8f73c6dfa1b6084da95d0c02294348b102b869598ba607870a2c2"
+    },
+    {
+      "source": "models/sports-car.glb",
+      "path": "models/sports-car.glb",
+      "bytes": 5957100,
+      "sha256": "141bc9182724c14ca07307fe93aca31b05ff8e8dd1dd8d3ac5e1e55d150c0335",
+      "packagedBytes": 5957100,
+      "packagedSha256": "141bc9182724c14ca07307fe93aca31b05ff8e8dd1dd8d3ac5e1e55d150c0335"
+    },
+    {
+      "source": "models/waterfront-s05.glb",
+      "path": "models/waterfront-s05.glb",
+      "bytes": 1905420,
+      "sha256": "e9729fe34190dccda55c7b2a3ffa9a776b923c49bad10700d27df1018fdeda57",
+      "packagedBytes": 1905420,
+      "packagedSha256": "e9729fe34190dccda55c7b2a3ffa9a776b923c49bad10700d27df1018fdeda57"
+    },
+    {
+      "source": "resident-motion.js",
+      "path": "resident-motion.js",
+      "bytes": 2764,
+      "sha256": "8cea653ba3d0bbdf54beba8868f869cecd75006ee8a134bd364225eeaa6bafe3",
+      "packagedBytes": 2764,
+      "packagedSha256": "8cea653ba3d0bbdf54beba8868f869cecd75006ee8a134bd364225eeaa6bafe3"
+    },
+    {
+      "source": "residents.js",
+      "path": "residents.js",
+      "bytes": 2965,
+      "sha256": "34534250f5376c58eac89107d2f9bc5649a94ab65a5becfee887e35f2ad302c3",
+      "packagedBytes": 2965,
+      "packagedSha256": "34534250f5376c58eac89107d2f9bc5649a94ab65a5becfee887e35f2ad302c3"
+    },
+    {
+      "source": "scene.js",
+      "path": "scene.js",
+      "bytes": 12990,
+      "sha256": "516689ad9310d009a017426937c76f57eed378191a0eae1d274dc10f8393fc7c",
+      "packagedBytes": 12990,
+      "packagedSha256": "516689ad9310d009a017426937c76f57eed378191a0eae1d274dc10f8393fc7c"
+    },
+    {
+      "source": "style.css",
+      "path": "style.css",
+      "bytes": 7359,
+      "sha256": "0c25316ac87e747990d6be5ca6b88ee163974e91cb8e7bbea007ffd858290f83",
+      "packagedBytes": 7359,
+      "packagedSha256": "0c25316ac87e747990d6be5ca6b88ee163974e91cb8e7bbea007ffd858290f83"
+    },
+    {
+      "source": "surface-detail.js",
+      "path": "surface-detail.js",
+      "bytes": 4171,
+      "sha256": "8db789ff9ccdef5c02f11c679c1e41a9c8cd699ac6c4b7000c50c416d00492ac",
+      "packagedBytes": 4171,
+      "packagedSha256": "8db789ff9ccdef5c02f11c679c1e41a9c8cd699ac6c4b7000c50c416d00492ac"
+    },
+    {
+      "source": "traffic-scene.js",
+      "path": "traffic-scene.js",
+      "bytes": 2591,
+      "sha256": "2db3eaea7453c84b49c5da07d3998d8d51e876e4335cbbf9f7d64cadbcf3d1db",
+      "packagedBytes": 2591,
+      "packagedSha256": "2db3eaea7453c84b49c5da07d3998d8d51e876e4335cbbf9f7d64cadbcf3d1db"
+    },
+    {
+      "source": "traffic.js",
+      "path": "traffic.js",
+      "bytes": 8740,
+      "sha256": "ecbf6d31bf808fd12c0d87d41141b531c6bb00b625693ff0cd425cca67b3b8c2",
+      "packagedBytes": 8740,
+      "packagedSha256": "ecbf6d31bf808fd12c0d87d41141b531c6bb00b625693ff0cd425cca67b3b8c2"
+    },
+    {
+      "source": "vehicle-surface.js",
+      "path": "vehicle-surface.js",
+      "bytes": 3475,
+      "sha256": "2d1cd67a7845705ebdad1677b0053a82119ed17aa63150d1d2adbfa4a6c0ce2f",
+      "packagedBytes": 3475,
+      "packagedSha256": "2d1cd67a7845705ebdad1677b0053a82119ed17aa63150d1d2adbfa4a6c0ce2f"
+    },
+    {
+      "source": "vehicle.js",
+      "path": "vehicle.js",
+      "bytes": 6209,
+      "sha256": "fed7f22abd294b1768fa5aaaaefbeceea9f5ded68d5d4f75a664e8b2d4e39a81",
+      "packagedBytes": 6209,
+      "packagedSha256": "fed7f22abd294b1768fa5aaaaefbeceea9f5ded68d5d4f75a664e8b2d4e39a81"
+    },
+    {
+      "source": "vendor/THREE-LICENSE.txt",
+      "path": "vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "packagedBytes": 1081,
+      "packagedSha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "source": "vendor/addons/loaders/GLTFLoader.js",
+      "path": "vendor/addons/loaders/GLTFLoader.js",
+      "bytes": 114739,
+      "sha256": "67ac5551fdafa6e349bd80c8f8e5e39c136d6b2fb1ad647db9abb21dc86f9e4a",
+      "packagedBytes": 114739,
+      "packagedSha256": "67ac5551fdafa6e349bd80c8f8e5e39c136d6b2fb1ad647db9abb21dc86f9e4a"
+    },
+    {
+      "source": "vendor/addons/loaders/HDRLoader.js",
+      "path": "vendor/addons/loaders/HDRLoader.js",
+      "bytes": 12456,
+      "sha256": "d7053cfc4019f520335ae07e0fe82b4ef5a66b6766e8b253d066616184995e89",
+      "packagedBytes": 12456,
+      "packagedSha256": "d7053cfc4019f520335ae07e0fe82b4ef5a66b6766e8b253d066616184995e89"
+    },
+    {
+      "source": "vendor/addons/utils/BufferGeometryUtils.js",
+      "path": "vendor/addons/utils/BufferGeometryUtils.js",
+      "bytes": 35539,
+      "sha256": "fda7e946b8e0b5ab39b779206589e7a1079a22eb24efb89d7223e03fdfb1f751",
+      "packagedBytes": 35539,
+      "packagedSha256": "fda7e946b8e0b5ab39b779206589e7a1079a22eb24efb89d7223e03fdfb1f751"
+    },
+    {
+      "source": "vendor/addons/utils/SkeletonUtils.js",
+      "path": "vendor/addons/utils/SkeletonUtils.js",
+      "bytes": 11062,
+      "sha256": "0761b1e003917b215d25dd81439d854b36034b5a57ce84c2cfe3b02428d7b253",
+      "packagedBytes": 11062,
+      "packagedSha256": "0761b1e003917b215d25dd81439d854b36034b5a57ce84c2cfe3b02428d7b253"
+    },
+    {
+      "source": "vendor/three.core.js",
+      "path": "vendor/three.core.js",
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "packagedBytes": 1403455,
+      "packagedSha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "source": "vendor/three.module.js",
+      "path": "vendor/three.module.js",
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "packagedBytes": 603113,
+      "packagedSha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "source": "waterfront-scene.js",
+      "path": "waterfront-scene.js",
+      "bytes": 4669,
+      "sha256": "94bf15327723928c0f4c86d1243c38de4a0ef3adfd25c74e67be0acd215ea986",
+      "packagedBytes": 4669,
+      "packagedSha256": "94bf15327723928c0f4c86d1243c38de4a0ef3adfd25c74e67be0acd215ea986"
+    },
+    {
+      "source": "waterfront.js",
+      "path": "waterfront.js",
+      "bytes": 4917,
+      "sha256": "73049bfde549e10de5b7218c4bc373e41e2a83501bdebdbca7749414cf975b82",
+      "packagedBytes": 4917,
+      "packagedSha256": "73049bfde549e10de5b7218c4bc373e41e2a83501bdebdbca7749414cf975b82"
+    },
+    {
+      "source": "world-layout.json",
+      "path": "world-layout.json",
+      "bytes": 8025,
+      "sha256": "99b2820381e9d574638f08e42956fc0f46b5c916a2a58f4dca6534d53b2d81ef",
+      "packagedBytes": 8025,
+      "packagedSha256": "99b2820381e9d574638f08e42956fc0f46b5c916a2a58f4dca6534d53b2d81ef"
+    },
+    {
+      "source": "world.js",
+      "path": "world.js",
+      "bytes": 2201,
+      "sha256": "d961efc713fdde9ecb5bbef1d08b5e2f1391817431f0cb5ea6c2637f3f531f3d",
+      "packagedBytes": 2201,
+      "packagedSha256": "d961efc713fdde9ecb5bbef1d08b5e2f1391817431f0cb5ea6c2637f3f531f3d"
+    }
+  ]
+}

@@ -59,3 +59,14 @@ Before publishing this correction, a real silent browser session on production c
 The owner requested removing Mario. Its catalog card, cover and Arcade-only filter were removed; current API routes reject the retired game ID. Historical favorites/history rows are retained in the database but omitted from library results and favorite responses. The featured counter uses the actual catalog length. The original local Mario source was not deleted. No database migration or authentication change is required.
 
 Production build, TypeScript, 19 app tests and the existing 21 Wardenfall gameplay/three audio checks passed before publishing. The catalog contains four playable games and no Mario entry; user library rows are preserved.
+
+
+## Sunset S06 harbor and bridge driving release — 13 September 2026
+
+Only Sunset was transferred from the approved S06 source manifest. The single-game packager follows ESM imports and GLB resources, rejects source files changed since validation, removes superseded Sunset models and preserves other game manifests. The 60 shipped runtime files total 136.49 MiB; the release receipt includes both source and packaged SHA-256 hashes. No production sources, credentials or saves were added.
+
+The release adds six city blocks, ten traffic cars with impact/recovery behavior, a moving bridge and barriers, an airport with approaching/landing/taxiing aircraft, and car surface/jump physics. Manual driving can climb curbs and the opening bridge, push gates, land or recover from the water. NPC traffic and guided tours still wait for bridge signals. The shared authenticated boot, real scene-readiness logo loader, silent test mode and Game Center return link are preserved. Sunset remains a session-only demo.
+
+Local validation: production build and TypeScript passed, as did 38 app tests and the existing 21 Wardenfall gameplay/three audio checks. The packaged Sunset regressions include traffic and the complete 1.1 km harbor/airport tour, 30/60/120 Hz curb and bridge driving, ballistic landings, water recovery and collision separation. All 60 packaged hashes match the release receipt. New model and physics module URLs reject signed-out requests with 401; game entry redirects to login. Existing source browser records cover the complete harbor tour and curb/climb/jump/recovery sequence; the user confirmed the local game works on 13 September.
+
+The owner chose to test signed-in production gameplay personally. This release does not claim a new authenticated web gameplay run, fresh provider-account/RLS test, email delivery test, FPS measurement or completed Dream Loop. Previous visual quality and source-model license limitations still apply. GitHub/Vercel deployment and signed-out production checks are recorded after publication.
