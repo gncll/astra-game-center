@@ -1,0 +1,42 @@
+THE £12,000 APPROVAL
+Fictional example for The Fine Print. All people, parties and case events are invented.
+This is evidence for a simulation, not a real case or completed legal review.
+
+Contract / dispute:
+Freelance / services
+
+Your side:
+Claimant
+
+The parties:
+Mira Studio Ltd (my company) and Northline Design Ltd (customer). Fictional parties.
+
+Locations:
+Both companies are in London, England.
+
+Governing law & court / arbitration:
+English law. Courts of England and Wales. Contract signed 1 June 2026.
+
+What worries you most?:
+Recover the unpaid £12,000 project fee without agreeing to unlimited revisions.
+
+The situation:
+FICTIONAL TEST CASE. Our company delivered a brand identity project on 1 July 2026. Northline approved the work by email, but has not paid. We exchanged notices and attempted negotiation; no claim has been filed. Both sides are companies, acting in business. No injury or consumer issue. The customer says the sign-off was provisional. I want to recover the agreed fee. Costs are only my illustrative estimate, not court rates.
+
+Currency:
+GBP
+
+Amount in dispute:
+12000
+
+Your estimated legal costs:
+1800
+
+=== Fictional services agreement.txt ===
+Fictional agreement dated 1 June 2026. Mira Studio Ltd provides a brand identity package to Northline Design Ltd. Clause 3: The fixed fee is GBP 12,000 payable within 30 days of written approval. Clause 4: Two rounds of revisions are included. Extra revisions require written agreement on price. Clause 7: The customer may withhold the entire fee until satisfied in its sole discretion, regardless of prior written approval. Clause 10: English law applies; courts of England and Wales have jurisdiction. Both companies signed. No separate acceptance criteria are attached.
+
+=== Fictional email evidence.txt ===
+Email from Northline project director, 1 July 2026: The board approves the final brand package. Please send the invoice. Email from Mira, 2 July 2026: Invoice for GBP 12,000 is attached. Email from Northline, 8 August 2026: Our director approved the design, but I regard that approval as provisional. Please complete four further rounds before we pay. Mira statement: We delivered the two included revision rounds; the emails documenting both rounds have not been included in this file.
+
+Evidence gaps:
+The emails documenting the two included revision rounds are absent. Complete notice and negotiation records are not attached. The court should distinguish statements from authenticated records. Legal costs of GBP 1,800 are an illustrative user estimate, not a court tariff. The rehearsal should preserve these gaps.

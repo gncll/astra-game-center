@@ -1,6 +1,7 @@
 import type { NextConfig } from 'next';
 const config: NextConfig = {
   poweredByHeader: false,
+  serverExternalPackages: ['pdf-parse'],
   outputFileTracingIncludes: { '/library': ['./templates/library.html'] },
   async headers() {
     return [

@@ -146,5 +146,40 @@
     ],
     "artLabel": null,
     "available": true
+  },
+  {
+    "id": "fine-print",
+    "name": "The Fine Print",
+    "genre": "Simulation",
+    "label": "Courtroom & decisions",
+    "accent": "#c4a46b",
+    "tagline": "Your case. Both sides. A different perspective.",
+    "description": "Bring a contract or dispute, research primary legal sources, and hear both sides in a 3D courtroom. Present evidence and explore conditional outcomes.",
+    "features": [
+      "Your documents & live research",
+      "Five voiced courtroom roles",
+      "Evidence, responses & verdict"
+    ],
+    "controls": [
+      [
+        "Upload",
+        "Bring your case file"
+      ],
+      [
+        "Click",
+        "Choose evidence & court view"
+      ],
+      [
+        "Type",
+        "Present your response"
+      ],
+      [
+        "Sound",
+        "Narration on / off"
+      ]
+    ],
+    "artLabel": null,
+    "note": "AI legal preparation simulation, not legal advice. Documents go to OpenAI and narration to ElevenLabs. Daily usage limits apply.",
+    "available": true
   }
 ]

@@ -13,12 +13,12 @@ before(async()=>{
 });
 after(async()=>{if(child&&child.exitCode===null){child.kill('SIGTERM');await new Promise(resolve=>child.once('exit',resolve));}});
 test('library and game entry redirect signed-out users',async()=>{
- for(const path of ['/library','/play/wardenfall','/games/wardenfall/index.html','/play/sidewalk','/games/sidewalk/index.html','/play/sunset','/games/sunset/index.html','/play/pine','/games/pine/demo.html']){
+ for(const path of ['/library','/play/wardenfall','/games/wardenfall/index.html','/play/sidewalk','/games/sidewalk/index.html','/play/sunset','/games/sunset/index.html','/play/pine','/games/pine/demo.html','/play/fine-print','/games/fine-print/index.html']){
   const response=await fetch(origin+path,{redirect:'manual'});assert.ok([302,303,307].includes(response.status),path);assert.equal(new URL(response.headers.get('location'),origin).pathname,'/login');
  }
 });
 test('new 3D games and their shared loading files require a verified session',async()=>{
- for(const path of ['boot.mjs','loading.mjs','center.css','sidewalk/models/westside.glb','sidewalk/vendor/three/build/three.module.js','sidewalk/mini-skate/Models/GLB%20format/Textures/colormap.png','sunset/models/city-s05.glb','sunset/models/bridge-leaf-s05.glb','sunset/models/airliner-s05.glb','sunset/vehicle-surface.js','sunset/assets/audio/S01-engine.mp3','pine/models/demo/survivor-actions.glb','pine/demo.js']){
+ for(const path of ['boot.mjs','loading.mjs','center.css','sidewalk/models/westside.glb','sidewalk/vendor/three/build/three.module.js','sidewalk/mini-skate/Models/GLB%20format/Textures/colormap.png','sunset/models/city-s05.glb','sunset/models/bridge-leaf-s05.glb','sunset/models/airliner-s05.glb','sunset/vehicle-surface.js','sunset/assets/audio/S01-engine.mp3','pine/models/demo/survivor-actions.glb','pine/demo.js','fine-print/models/courtroom.glb','fine-print/models/court-actor.glb','fine-print/src/cloud-client.js','fine-print/example-case.txt']){
   const response=await fetch(origin+'/games/'+path,{redirect:'manual'});assert.equal(response.status,401,path);
  }
 });
@@ -40,4 +40,8 @@ test('missing callback credentials cannot log in or redirect off-site',async()=>
 });
 test('public login artwork remains available',async()=>{
  const response=await fetch(origin+'/center/brand.svg');assert.equal(response.status,200);assert.match(response.headers.get('content-type'),/svg/);
+});
+
+test("Fine Print provider routes require a verified account",async()=>{
+ for(const route of ["config","poll","speech","research"]){const r=await fetch(origin+"/api/fine-print/"+route);assert.equal(r.status,401);}
 });

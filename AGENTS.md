@@ -23,3 +23,7 @@ A local game-development request does not by itself authorize a new production r
 ## Sunset S06 — 13 September 2026
 
 Sunset now ships the six-block harbor, traffic, opening-bridge driving/jumps and airport. Use `scripts/package-sunset.py` for Sunset-only transfers from its approved source manifest, preserving all other game copies. `docs/sunset-release-manifest.json` records the 60 packaged files and hashes. The owner explicitly authorized GitHub/Vercel publication and elected to test signed-in production gameplay personally. See `docs/VALIDATION.md` for the exact checks and remaining visual/model-license limits.
+
+## The Fine Print — 16 September 2026
+
+The owner authorized live publication, added provider keys in Vercel, and reported successful execution of the Fine Print SQL migration. The game and new generated icon are included. Canonical gameplay and cloud adapter sources remain in the separate The Fine Print source project; use the scoped packager and manifest. The new authenticated API uses OpenAI Responses background web search and ElevenLabs; never replace it with the local fixture. See docs/FINE-PRINT-RELEASE.md for limits and distinctions between mocked UI checks and real provider verification.

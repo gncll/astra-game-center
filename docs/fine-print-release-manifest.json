@@ -1,0 +1,173 @@
+{
+  "format": "fine-print-web-v1",
+  "files": [
+    {
+      "path": "public/games/fine-print/index.html",
+      "source": "index.html",
+      "bytes": 833,
+      "sha256": "58006873cc7d5c794408fcffb2a1aa92370808b07580fe51d62c7dc5e44a1934"
+    },
+    {
+      "path": "public/games/fine-print/styles.css",
+      "source": "styles.css + web loading styles",
+      "bytes": 31999,
+      "sha256": "8bc83b5e4c70ac5d8709761f095bfed53c08a04a6bd1a3d25aee7fae5ad891fd"
+    },
+    {
+      "path": "public/games/fine-print/src/app.js",
+      "source": "src/app.js",
+      "bytes": 38005,
+      "sha256": "9314323385378808ed8da179448c622c0fcaf31fb6807559331504e028d69ff3"
+    },
+    {
+      "path": "public/games/fine-print/assets/courtroom.png",
+      "source": "assets/courtroom.png",
+      "bytes": 1824151,
+      "sha256": "1877bcee5dc3bb11732fb21c9cec9c670fe237584e6e7c53dd644282b66525f9"
+    },
+    {
+      "path": "public/games/fine-print/assets/favicon.svg",
+      "source": "assets/favicon.svg",
+      "bytes": 221,
+      "sha256": "160c4def20eb3f33bd028cb310e33fb79290dfba183bae384d057c703d62e985"
+    },
+    {
+      "path": "public/games/fine-print/src/courtroom3d.js",
+      "source": "src/courtroom3d.js",
+      "bytes": 9681,
+      "sha256": "1a5831ad6da191e63997631cc2d5de33e4dec9dd2af97eb1f44907b41d482e39"
+    },
+    {
+      "path": "public/games/fine-print/models/courtroom.glb",
+      "source": "models/courtroom.glb",
+      "bytes": 3567036,
+      "sha256": "1042bc61135c70197367f64f435d23b66abcd558702fbdabef1651af11623501"
+    },
+    {
+      "path": "public/games/fine-print/models/court-actor.glb",
+      "source": "models/court-actor.glb",
+      "bytes": 6527804,
+      "sha256": "d3d075e9713c25577e663c98bc2fc0d5ec3e8c4bde707bd504fc69955b919274"
+    },
+    {
+      "path": "public/games/fine-print/vendor/three.module.js",
+      "source": "vendor/three.module.js",
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "path": "public/games/fine-print/vendor/three.core.js",
+      "source": "vendor/three.core.js",
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "path": "public/games/fine-print/vendor/GLTFLoader.js",
+      "source": "vendor/GLTFLoader.js",
+      "bytes": 114846,
+      "sha256": "9707ef165e4fdf9c4c98fdd1807e1d4fd0fa60755c446a260d534afc51cc9bf8"
+    },
+    {
+      "path": "public/games/fine-print/vendor/BufferGeometryUtils.js",
+      "source": "vendor/BufferGeometryUtils.js",
+      "bytes": 35551,
+      "sha256": "248b3e8420bd3de805ca01845c1b0cc62aa2766f3c56bdcead265e306f8e715c"
+    },
+    {
+      "path": "public/games/fine-print/vendor/SkeletonUtils.js",
+      "source": "vendor/SkeletonUtils.js",
+      "bytes": 11074,
+      "sha256": "98b7b2b72f64f0132669976fd5992436c3bab2d077023c7871db1ecf7e0f279f"
+    },
+    {
+      "path": "public/games/fine-print/vendor/THREE-LICENSE.txt",
+      "source": "vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "path": "public/games/fine-print/models/MAKEHUMAN-CC0.md",
+      "source": "models/MAKEHUMAN-CC0.md",
+      "bytes": 6962,
+      "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c"
+    },
+    {
+      "path": "lib/fine-print/core.mjs",
+      "source": "web/core.mjs",
+      "bytes": 7966,
+      "sha256": "235d23950dcc2f81323bea09f9ab84bb53996c7f9aaa2a554cac1d8d10a4a738"
+    },
+    {
+      "path": "lib/fine-print/service.mjs",
+      "source": "web/service.mjs",
+      "bytes": 9181,
+      "sha256": "7fe29fdd0b6ea5a6bb35f25245aa2445eeea01338022647fd5d77c7a03b4e82d"
+    },
+    {
+      "path": "lib/fine-print/documents.mjs",
+      "source": "web/documents.mjs",
+      "bytes": 6662,
+      "sha256": "d6cdb3dc561f0a49a80376f4b178c63178f59467d8c816fa2866f62afe705ff5"
+    },
+    {
+      "path": "lib/fine-print/protocol.json",
+      "source": "web/protocol.json",
+      "bytes": 36397,
+      "sha256": "7cbfbcf540de6ea344955f8c2b7b9edaf03a660bc4734976296be9b8038fae38"
+    },
+    {
+      "path": "public/games/fine-print/src/cloud-client.js",
+      "source": "web/client.js",
+      "bytes": 2742,
+      "sha256": "f8b7d762af10af9352894e44e67f3154d18c6bfa4a619cd24c9a748cd5c3ac43"
+    },
+    {
+      "path": "public/games/fine-print/src/boot.js",
+      "source": "web/boot.js",
+      "bytes": 653,
+      "sha256": "f74773f01adbec1a84cbb3d5c785e7baf25588b049e0295567e6c67d5981aadd"
+    },
+    {
+      "path": "app/api/fine-print/[action]/route.ts",
+      "source": "web/route.ts",
+      "bytes": 3155,
+      "sha256": "37a9e246af32fdd09b2c694fef64bd2cf1e70ffe3b520b451ca59e16e1ea0061"
+    },
+    {
+      "path": "supabase/migrations/202609160001_fine_print.sql",
+      "source": "web/202609160001_fine_print.sql",
+      "bytes": 3415,
+      "sha256": "859c776c2fd7a5f1938f684e1722060f57c10ff9c8138c7578c07074e5777853"
+    },
+    {
+      "path": "scripts/package-fine-print.py",
+      "source": "web/package-fine-print.py",
+      "bytes": 7348,
+      "sha256": "930f1e4c23f06bfc07546e02f500156a4503c5c65651a4b0eca841480876af33"
+    },
+    {
+      "path": "tests/fine-print/core.test.mjs",
+      "source": "tests/web/core.test.mjs",
+      "bytes": 8556,
+      "sha256": "74761402bf80452936640cdee97b8786ea0ba83ffaccd3c0948c1fe811372fef"
+    },
+    {
+      "path": "tests/fine-print/fixtures.mjs",
+      "source": "tests/web/fixtures.mjs",
+      "bytes": 2531,
+      "sha256": "2aa428e5a33b588412b62f210ec2f6d6be53a369d8b28c4c6e539d3d41e7ef78"
+    },
+    {
+      "path": "public/center/assets/fine-print.png",
+      "source": "assets/game-center-icon.png",
+      "bytes": 2549215,
+      "sha256": "2b7247aa65af8566429a7869d8ec90bfd21cf45b48c58702fbca8e2492f6e8cd"
+    },
+    {
+      "path": "public/games/fine-print/example-case.txt",
+      "source": "examples/The-Fine-Print-Demo-Case.txt",
+      "bytes": 2607,
+      "sha256": "6395231917d2c17d33276cd3ff4035a3b4f4d679a29d20a14879c25aeba67a34"
+    }
+  ]
+}

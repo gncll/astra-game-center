@@ -9,7 +9,7 @@ test('mutations require an allowed origin, JSON and the request header',()=>{
 });
 test('game launch whitelist keeps unavailable cards unavailable',()=>{
  assert.equal(playableGame('wardenfall'),true);
- for(const id of ['sunset','sidewalk','pine']){assert.equal(validGameId(id),true);assert.equal(playableGame(id),true);}
+ for(const id of ['sunset','sidewalk','pine','fine-print']){assert.equal(validGameId(id),true);assert.equal(playableGame(id),true);}
  assert.equal(playableGame('mario'),false);assert.equal(validGameId('mario'),false);
  for(const id of ['../wardenfall','WARDENFALL','unknown','__proto__','constructor',null])assert.equal(playableGame(id),false);
 });
